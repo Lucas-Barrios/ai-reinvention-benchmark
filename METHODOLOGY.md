@@ -136,9 +136,17 @@ at best, since the vendor has an interest in the claim.
 
 ### 4.2 Assessment window
 
-Sources published from **January 2024 onward**. Older material is used only for
-context, never for scoring, because AI capability disclosure before 2024 is not
+Sources published from **January 2024 to the date of assessment**, recorded per
+company as `sources_reviewed_through`. Older material is used only for context,
+never for scoring, because AI capability disclosure before 2024 is not
 comparable with what followed.
+
+**Recency check.** Every assessment must include an explicit search of the
+current calendar year for the company being assessed. Where the check returns
+nothing that changes a score, that is recorded rather than left implicit.
+
+This requirement was added in v1.3 after a search-strategy defect was found. See
+section 9.
 
 ## 5. Scoring procedure
 
@@ -231,6 +239,7 @@ the acceleration can influence the outcome. The git history shows that ordering.
 | 1.0 | 2026-08-12 | Six dimensions, weights, definitions and evidence sources defined |
 | 1.1 | 2026-08-12 | Anchored descriptors added for all dimensions; generic ladder and tie-break rule introduced |
 | 1.2 | 2026-08-12 | Adopter-not-vendor scope rule added; definitions and anchors for data foundation, agentic deployment and disclosed outcomes narrowed to the company's own operations; governance readiness exempted |
+| 1.3 | 2026-08-12 | Procedural amendment. Assessment window given an explicit upper bound; mandatory current-year recency check added; `sources_reviewed_through` required in every assessment file. No dimension, weight or anchor changed, so `data/dimensions.yaml` remains at 1.2 |
 
 ### On the v1.2 amendment
 
@@ -250,6 +259,25 @@ patching the one where it surfaced.
 The framework changed, but it changed **before any company was scored**, and the
 change is visible in git history rather than silently absorbed. The
 rubric-precedes-data property in `CHARTER.md` is intact.
+
+### On the v1.3 amendment
+
+A defect in search strategy, not in the framework.
+
+Assessment was carried out in August 2026, but search queries had been anchored
+on 2025 as the recency term. The most recent twelve months of disclosure were
+therefore systematically under-sampled across the first three companies
+assessed. The window as originally written, "January 2024 onward", was
+technically correct and silently unbounded, and the scoring procedure contained
+nothing requiring the current year to be searched. The method permitted the gap,
+which is why it went unnoticed.
+
+On discovery, a recency pass was run over every company already assessed before
+any further company was scored. No score changed. Siemens, TRUMPF and GEA each
+carry a `recency_check` record stating what was searched and what was found.
+
+Recorded here rather than corrected silently, because a benchmark that hides a
+method defect is worth less than one that documents it.
 
 Substitutions to the peer set and any post-assessment amendment to the framework
 are recorded here.
