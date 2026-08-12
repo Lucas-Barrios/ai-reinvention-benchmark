@@ -1,0 +1,11 @@
+# Data model and validation
+pydantic>=2.7,<3.0
+PyYAML>=6.0,<7.0
+
+# Application
+streamlit>=1.35,<2.0
+plotly>=5.22,<6.0
+pandas>=2.2,<3.0
+
+# Testing
+pytest>=8.2,<9.0
