@@ -1,0 +1,277 @@
+# Assessment: KION GROUP AG
+#
+# Scored against framework v1.2 under methodology v1.5. Scores measure evidence
+# of public disclosure of the company's own AI adoption, not internal capability
+# and not products sold. See METHODOLOGY.md sections 2, 3.1, 4, 4.0a and 5.1.
+
+company_id: kion
+company_name: KION GROUP AG
+framework_version: "1.2"
+methodology_version: "1.5"
+assessed_on: 2026-08-12
+assessor: Lucas Barrios
+sources_reviewed_through: 2026-08-12
+
+search_log:
+  protocol_applied_on: 2026-08-12
+  classes:
+    - class: 1
+      source: Annual Report 2025 and Q2 2026 interim report
+      searched: Located and reviewed for AI governance, policy and internal adoption.
+      result: >
+        AI content concerns products, partnerships and market outlook. No internal
+        governance framework or internal adoption programme identified.
+    - class: 2
+      source: Supplementary Non-financial Insights 2025
+      searched: >
+        Keyword search of 1,999 lines for AI Act, AI governance, responsible AI,
+        AI policy, artificial intelligence, AI training and AI skills.
+      result: >
+        Zero matches for every AI term searched. The document contains a "Talent
+        development and learnings" section, but no AI-specific content anywhere.
+    - class: 3
+      source: Newsroom and press releases
+      searched: >
+        Internal AI, own operations, employees and generative AI, current and
+        prior year.
+      result: >
+        Extensive AI communication, almost entirely product-facing: physical AI at
+        GTC 2026 and LogiMAT, the NVIDIA and Accenture partnership, digital twins,
+        warehouse optimisation.
+    - class: 4
+      source: Company stories and Newsroom features
+      searched: KION site search for MERLIN and internal AI application names.
+      result: >
+        Located the story "Artificial intelligence is revolutionizing the
+        maintenance process of industrial trucks" in English and German. The
+        article body could not be loaded; see method_note.
+    - class: 5
+      source: Named-executive interviews and conference material
+      searched: Executives on AI strategy and internal transformation.
+      result: >
+        Executive commentary located concerns customer-facing AI and product
+        development. No named executive accountable for AI identified.
+    - class: 6
+      source: Careers pages and job advertisements
+      searched: Internal AI capability roles via KION Workday portal and aggregators.
+      result: >
+        AI hiring is active: AI Application Engineer, an AI Engineer role for
+        agentic AI applications, Software Data Science & Analytics Engineer, and a
+        Robotics AI working student position. Roles located sit within KION Supply
+        Chain Solutions, the customer-facing business, and describe building
+        products rather than internal capability.
+    - class: 7
+      source: Current-year recency check
+      searched: Calendar year 2026 for KION internal AI adoption and governance.
+      result: >
+        2026 material located concerns physical AI demonstrations at GTC and
+        LogiMAT. Product-facing. Nothing on internal adoption or governance.
+
+method_note: >
+  The MERLIN story could not be retrieved in full. Five attempts using a
+  JavaScript-capable browser, via the direct article URL, two storyid variants,
+  the site search, and the All-Stories index, returned navigation structure but
+  never the article body; KION's newsroom routing appears to be broken for this
+  story. The quoted text was verified directly from KION's own search index in
+  both English and German, which agree. The page carries no visible publication
+  date, and is scored under METHODOLOGY.md section 4.0a as an undated first-party
+  source at reduced confidence.
+
+recency_check:
+  performed_on: 2026-08-12
+  searched: Calendar year 2026 for KION internal AI use, governance and workforce.
+  found: Physical AI product demonstrations at GTC 2026 and LogiMAT.
+  assessment: Product-facing. No effect on any dimension.
+  score_changes: none
+
+scores:
+
+  - dimension: data_foundation
+    score: 1
+    anchor_applied: >
+      Data described as a strategic priority, with no named platform, programme
+      or owner.
+    rationale: >
+      A named internal "Analytics & AI team" exists, which establishes capability
+      and an owner of sorts. No data platform or integration programme for KION's
+      own data estate is disclosed. Anchor 2 requires a named platform or
+      programme.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          In collaboration with KION's Analytics & AI team, the decision was made
+          to use AI to make such tasks faster and more efficient.
+        source_url: https://www.kiongroup.com/en/News-Stories/Stories/Digitalization/Artificial-intelligence-is-revolutionizing-the-maintenance-process-of-industrial-trucks.html
+        retrieved: 2026-08-12
+        confidence: reduced
+        document_type: company story, first-party, undated
+        supports: A named internal AI function exists; no data platform disclosed.
+
+  - dimension: process_automation_depth
+    score: 2
+    anchor_applied: >
+      Automation deployed in a named internal process at pilot or single-site
+      scale.
+    rationale: >
+      Service report classification within product maintenance and quality is a
+      named internal process with a tool applied to it in production. Anchor 3
+      requires production across multiple sites, which is not disclosed.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          In the area of product maintenance and quality, the first productively
+          used generative AI tool MERLIN is revolutionizing the maintenance
+          process of our industrial trucks. The main goal is to reduce the effort
+          required to classify problems that are documented during maintenance
+          processes on material handling equipment.
+        source_url: https://www.kiongroup.com/en/News-Stories/Stories/Digitalization/Artificial-intelligence-is-revolutionizing-the-maintenance-process-of-industrial-trucks.html
+        retrieved: 2026-08-12
+        confidence: reduced
+        document_type: company story, first-party, undated
+        supports: A named internal process with a production tool applied to it.
+
+  - dimension: agentic_genai_deployment
+    score: 3
+    anchor_applied: >
+      At least one generative AI application in production with real internal
+      users in a named business function.
+    rationale: >
+      MERLIN is named, described as productively used rather than piloted, and
+      applied to KION's own maintenance and quality function. The phrase "our
+      industrial trucks" confirms internal scope. Anchor 4 requires multiple
+      applications in internal production or a disclosed agentic workflow across
+      process steps; MERLIN is described as the first, and no second internal
+      application is named.
+    tie_break_applied: true
+    dating_note: >
+      Undated source. The content dates itself: "the first productively used
+      generative AI tool" cannot predate 2023, so the source falls inside the
+      assessment window on internal evidence.
+    evidence:
+      - quote: >
+          In the meantime, increasingly complex use cases are also supported by AI
+          tools. In the area of product maintenance and quality, the first
+          productively used generative AI tool MERLIN is revolutionizing the
+          maintenance process of our industrial trucks.
+        source_url: https://www.kiongroup.com/en/News-Stories/Stories/Digitalization/Artificial-intelligence-is-revolutionizing-the-maintenance-process-of-industrial-trucks.html
+        retrieved: 2026-08-12
+        confidence: reduced
+        document_type: company story, first-party, undated
+        supports: Named generative AI tool in production in KION's own operations.
+      - quote: >
+          Im Bereich der Produktwartung und -qualität revolutioniert das erste
+          produktiv eingesetzte generative KI-Tool MERLIN den Instandhaltungs-
+          prozess unserer Flurförderzeuge.
+        source_url: https://www.kiongroup.com/de/Newsroom/Alle-Stories/
+        retrieved: 2026-08-12
+        confidence: reduced
+        document_type: company story, first-party, undated, German edition
+        supports: German edition agrees with the English, corroborating the wording.
+
+  - dimension: governance_readiness
+    score: 0
+    anchor_applied: No public reference to AI governance, policy or principles.
+    rationale: >
+      The only score of 0 on governance in the peer set. Keyword search of the
+      Supplementary Non-financial Insights 2025 returned zero matches for AI Act,
+      AI governance, responsible AI, AI policy and artificial intelligence. No
+      named accountable role, governance body or published principle was located
+      across seven source classes. KION has generative AI in production internally
+      and discloses no governance around it.
+    tie_break_applied: false
+    evidence:
+      - finding: >
+          Keyword search of the Supplementary Non-financial Insights 2025 (1,999
+          lines) returned zero matches for "AI Act", "AI governance", "responsible
+          AI", "AI policy", "artificial intelligence", "AI training" and "AI
+          skills".
+        source_url: https://www.kiongroup.com/KION-Website-Main/About-us/Sustainability/Insights/KION-Supplementary-Non-financial-Insights-2025.pdf
+        published: 2026
+        document_type: supplementary non-financial disclosure
+        supports: Complete absence of AI governance disclosure in the primary sustainability document.
+
+  - dimension: workforce_enablement
+    score: 1
+    anchor_applied: >
+      Upskilling mentioned in general terms, without AI specificity.
+    rationale: >
+      A "Talent development and learnings" section exists in non-financial
+      disclosure, but the same document returned zero matches for AI training or
+      AI skills. Anchor 2 requires AI training offered to a specific group.
+    tie_break_applied: false
+    evidence:
+      - quote: Talent development and learnings
+        source_url: https://www.kiongroup.com/KION-Website-Main/About-us/Sustainability/Insights/KION-Supplementary-Non-financial-Insights-2025.pdf
+        published: 2026
+        document_type: supplementary non-financial disclosure
+        supports: Learning disclosure exists, without AI specificity.
+
+  - dimension: disclosed_outcomes
+    score: 1
+    anchor_applied: >
+      Qualitative benefit claims only, such as improved efficiency, with no
+      figure.
+    rationale: >
+      MERLIN is described as "revolutionizing" the maintenance process, with the
+      stated aim of reducing classification effort. A qualitative claim about a
+      tool in production, with no figure, scope or baseline attached. Anchor 2
+      requires a quantified figure.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          The main goal is to reduce the effort required to classify problems that
+          are documented during maintenance processes on material handling
+          equipment.
+        source_url: https://www.kiongroup.com/en/News-Stories/Stories/Digitalization/Artificial-intelligence-is-revolutionizing-the-maintenance-process-of-industrial-trucks.html
+        retrieved: 2026-08-12
+        confidence: reduced
+        document_type: company story, first-party, undated
+        supports: Benefit stated as a goal, unquantified.
+
+excluded_evidence:
+
+  - reference: >
+      Physical AI demonstrations at NVIDIA GTC 2026 and LogiMAT, the NVIDIA and
+      Accenture partnership on intelligent warehouses, digital twins powered by
+      physical AI, and generative AI for warehouse management system
+      configuration.
+    source_url: https://www.kiongroup.com/en/News-Stories/Stories/Digitalization/KION-Teams-with-NVIDIA-and-Accenture-to-Optimize-Supply-Chains-with-AI-Powered-Robots-and-Digital-Twins.html
+    published: 2025-2026
+    document_type: press releases and company stories
+    would_have_supported: agentic_genai_deployment, disclosed_outcomes
+    exclusion_reason: >
+      Products and customer solutions. Vendor evidence, excluded under the scope
+      rule. This is the overwhelming majority of KION's AI communication by
+      volume.
+
+  - reference: >
+      AI Application Engineer, AI Engineer for agentic AI applications, Software
+      Data Science & Analytics Engineer and Robotics AI working student roles.
+    source_url: https://kiongroup.wd3.myworkdayjobs.com/en-US/KIONGroup
+    retrieved: 2026-08-12
+    document_type: job advertisements
+    would_have_supported: data_foundation, workforce_enablement
+    exclusion_reason: >
+      Roles located sit within KION Supply Chain Solutions, the customer-facing
+      business, and describe building AI products for customers rather than
+      internal capability. Recorded because source class 6 exists precisely to
+      surface internal capability building, and in KION's case it surfaced the
+      opposite.
+
+notes: >
+  KION is the sharpest illustration of the pattern this benchmark was built to
+  detect. It has a named generative AI tool in production inside its own
+  maintenance and quality function, which places it above most of the peer set on
+  deployment. It discloses no AI governance whatsoever: zero matches across its
+  primary sustainability document, no accountable role, no policy, no principles.
+  It is the only company in the set scoring 0 on governance while scoring 3 on
+  deployment.
+
+  The contrast with Krones is exact and opposite. Krones has an Advisory Council
+  on AI Strategy, a Head of AI and explicit EU AI Act preparation, with its
+  internal deployment still described as a pilot. KION has production deployment
+  and no visible governance at all.
+
+  Note also that KION's job advertisements, the source class added specifically
+  to surface unpublicised internal capability, surfaced only customer-facing
+  product roles.
