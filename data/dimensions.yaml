@@ -3,9 +3,14 @@
 # Adopted before any company was assessed. See CHARTER.md, "Integrity commitments".
 # Amendments to this file after assessment has begun must be justified in
 # METHODOLOGY.md and are visible in git history.
+#
+# v1.2 amends the scope of assessment after a framework ambiguity was exposed
+# during source review. Amended before any company was scored. See
+# METHODOLOGY.md section 9.
 
-version: "1.1"
+version: "1.2"
 adopted: 2026-08-12
+amended: 2026-08-12
 
 scale:
   min: 0
@@ -28,6 +33,30 @@ scale:
     4: Production at scale across the group, with supporting structure disclosed.
     5: Production at scale with quantified outcomes published.
 
+scope_rule:
+  principle: >
+    This benchmark assesses each company as an ADOPTER of AI in its own
+    operations. It does not assess the company as a VENDOR of AI to others.
+    Several firms in the peer set sell industrial automation and AI software.
+    Without this rule, those firms would score highly for their product
+    portfolios and the benchmark would become a catalogue of who sells AI rather
+    than an assessment of who runs on it.
+  rules:
+    - Products and services the company sells count as evidence only where the
+      company discloses deploying them in its own operations.
+    - Customer case studies and customer outcomes are not evidence of the
+      assessed company's own maturity, however impressive.
+    - Where a company states it uses its own technology internally, that counts,
+      and the evidence entry records it explicitly.
+  exception:
+    dimension: governance_readiness
+    reason: >
+      Governance structures count whether they cover the company's own use of AI
+      or the AI it places on the market. Under the EU AI Act obligations attach
+      to providers and deployers alike, and in practice firms operate one
+      governance structure across both. Each evidence entry records which it
+      covers.
+
 weighting_principle: >
   Weights express a view about what most separates leaders from followers in
   European industrial machinery today. They are a judgement, documented and
@@ -41,9 +70,10 @@ dimensions:
     weight: 0.20
     definition: >
       The degree to which the company has consolidated, integrated and governed
-      the data its AI work depends on. Covers platform consolidation, integration
-      of operational and enterprise data, data quality practice, and named
-      stewardship of data assets.
+      its own data estate. Covers platform consolidation, integration of
+      operational and enterprise data, data quality practice, and named
+      stewardship of data assets. Data platforms the company sells to customers
+      are out of scope unless it discloses running its own operations on them.
     why_it_matters: >
       Agentic and generative systems fail quietly on fragmented data. Sector
       firms carry decades of plant, product and service data across
@@ -91,26 +121,30 @@ dimensions:
     name: Agentic and generative AI deployment
     weight: 0.25
     definition: >
-      Production use of generative and agentic AI, distinguished from pilots,
-      demonstrations and vendor partnership announcements. Production means real
-      users, real workload, in a named business context.
+      Production use of generative and agentic AI inside the company's own
+      operations, distinguished from pilots, demonstrations and vendor
+      partnership announcements. Production means real internal users, real
+      workload, in a named business context. Generative AI the company sells is
+      out of scope unless it discloses deploying it in its own operations. See
+      scope_rule.
     why_it_matters: >
       This is the reinvention frontier and the dimension where the distance
       between announcement and deployment is widest. Weighted highest because it
       most sharply separates firms that have operationalised the technology from
-      firms that have discussed it.
+      firms that have discussed it. Several peers sell generative AI products;
+      whether they run on them is a different and more revealing question.
     evidence_sources:
       - Press releases naming applications in production
       - Annual report AI sections
       - Product and platform announcements
       - Technical blogs and conference presentations by named employees
     anchors:
-      0: No public reference to generative or agentic AI.
-      1: Generative AI named in strategy or an executive statement, with no application identified.
-      2: Named pilot, proof of concept, or vendor partnership, with no disclosed production use.
-      3: At least one generative AI application in production with real users in a named business context.
-      4: Multiple generative AI applications in production, or a disclosed agentic workflow acting across process steps.
-      5: As level 4, with published adoption or outcome figures and a described human oversight model.
+      0: No public reference to generative or agentic AI in the company's own operations.
+      1: Internal use of generative AI named in strategy or an executive statement, with no application identified.
+      2: Named internal pilot or proof of concept, with no disclosed production use.
+      3: At least one generative AI application in production with real internal users in a named business function.
+      4: Multiple generative AI applications in internal production, or a disclosed agentic workflow acting across process steps.
+      5: As level 4, with published internal adoption or outcome figures and a described human oversight model.
 
   - id: governance_readiness
     name: AI governance readiness
@@ -166,8 +200,10 @@ dimensions:
     name: Disclosed measurable outcomes
     weight: 0.15
     definition: >
-      Whether the company publishes quantified results from AI work: figures with
-      scope, baseline or method, rather than intentions, activity or adjectives.
+      Whether the company publishes quantified results from AI work in its own
+      operations: figures with scope, baseline or method, rather than intentions,
+      activity or adjectives. Results achieved by customers using the company's
+      products are out of scope. See scope_rule.
     why_it_matters: >
       Publishing a number is the clearest signal available from outside that a
       deployment is real and measured. It is also the discipline most absent from

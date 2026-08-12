@@ -41,7 +41,35 @@ in [`data/dimensions.yaml`](data/dimensions.yaml).
 | Workforce enablement | 0.10 |
 | Disclosed measurable outcomes | 0.15 |
 
-### 3.1 The weighting argument
+### 3.1 Scope: adopter, not vendor
+
+**This benchmark assesses each company as an adopter of AI in its own operations,
+not as a vendor of AI to others.**
+
+Several firms in the peer set sell industrial automation and AI software. Siemens,
+Dürr, KION and Sandvik all place AI products on the market. Without this rule
+those firms would score highly for their product portfolios, and the benchmark
+would quietly become a catalogue of who sells AI rather than an assessment of who
+runs on it.
+
+In practice:
+
+- Products the company sells count only where it discloses deploying them in its
+  own operations
+- Customer case studies and customer outcomes are not evidence of the assessed
+  company's own maturity, however impressive the figures
+- Where a company states it uses its own technology internally, that counts, and
+  the evidence entry records it explicitly
+
+**One exception: governance readiness.** Governance structures count whether they
+cover the company's own use of AI or the AI it places on the market. Under the EU
+AI Act obligations attach to providers and deployers alike, and firms operate one
+governance structure across both. Each evidence entry records which it covers.
+
+This rule was added in framework v1.2, after review of Siemens source material
+exposed the ambiguity, and before any company was scored. See section 9.
+
+### 3.2 The weighting argument
 
 Weights are a judgement about what separates leaders from followers in this
 sector today. The reasoning:
@@ -202,6 +230,26 @@ the acceleration can influence the outcome. The git history shows that ordering.
 |---|---|---|
 | 1.0 | 2026-08-12 | Six dimensions, weights, definitions and evidence sources defined |
 | 1.1 | 2026-08-12 | Anchored descriptors added for all dimensions; generic ladder and tie-break rule introduced |
+| 1.2 | 2026-08-12 | Adopter-not-vendor scope rule added; definitions and anchors for data foundation, agentic deployment and disclosed outcomes narrowed to the company's own operations; governance readiness exempted |
+
+### On the v1.2 amendment
+
+The ambiguity was found during source review for the first company, before any
+score was recorded.
+
+Dimension 2 had always excluded "the automation the company sells to customers".
+Dimensions 1, 3 and 6 did not carry the same exclusion, which was an oversight
+rather than a decision. Reviewing Siemens material made the consequence obvious:
+the strongest available evidence on generative AI concerned a product sold to
+customers, and scoring it would have measured the product portfolio rather than
+the company's own maturity.
+
+The rule was written once and applied across all affected dimensions, rather than
+patching the one where it surfaced.
+
+The framework changed, but it changed **before any company was scored**, and the
+change is visible in git history rather than silently absorbed. The
+rubric-precedes-data property in `CHARTER.md` is intact.
 
 Substitutions to the peer set and any post-assessment amendment to the framework
 are recorded here.
