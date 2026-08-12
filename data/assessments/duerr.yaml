@@ -1,0 +1,215 @@
+# Assessment: Dürr AG
+#
+# Scored against framework v1.2 under methodology v1.4. Scores measure evidence
+# of public disclosure of the company's own AI adoption, not internal capability
+# and not products sold. See METHODOLOGY.md sections 2, 3.1, 4 and 5.1.
+
+company_id: duerr
+company_name: Dürr AG
+framework_version: "1.2"
+methodology_version: "1.4"
+assessed_on: 2026-08-12
+assessor: Lucas Barrios
+sources_reviewed_through: 2026-08-12
+
+search_log:
+  protocol_applied_on: 2026-08-12
+  classes:
+    - class: 1
+      source: Annual Report 2025, published 2026-03-26
+      searched: >
+        Keyword search of 2,082 lines for AI Act, AI governance, responsible AI,
+        AI policy, AI guideline, internal AI, AI and employees, AI training,
+        Technology Council, artificial intelligence, data platform, digitalization
+        strategy, upskilling, qualification.
+      result: >
+        Two relevant passages, both governance-adjacent. Zero matches for AI Act,
+        AI governance, responsible AI, AI policy or AI training. Remaining
+        artificial intelligence matches concern products or macroeconomic context.
+    - class: 2
+      source: Sustainability report
+      searched: Most recent sustainability report and non-financial disclosure.
+      result: >
+        Most recent located sustainability report is dated 2023, outside the
+        assessment window. No in-window sustainability disclosure found.
+    - class: 3
+      source: Newsroom and press releases
+      searched: >
+        German and English queries for internal AI, own processes, employees,
+        generative AI and Copilot, current and prior year.
+      result: >
+        Nothing on internal adoption. Located a release on Dürr's leading role in
+        the RoX research project for AI-based robot cell configuration, which is
+        product and R&D oriented.
+    - class: 4
+      source: Company magazine, blog, stories
+      searched: Company-published feature content on artificial intelligence.
+      result: No equivalent internal-facing feature content located.
+    - class: 5
+      source: Named-executive interviews and conference material
+      searched: >
+        Chief Digital Officer, CIO and equivalent executives on AI strategy and
+        internal transformation.
+      result: >
+        No named-executive interview on AI located. This is the source class that
+        yielded the strongest in-scope evidence for TRUMPF, Krones and GEA.
+    - class: 6
+      source: Careers pages and job advertisements
+      searched: Internal AI capability roles.
+      result: No AI-specific internal capability roles surfaced in search.
+    - class: 7
+      source: Current-year recency check
+      searched: Calendar year 2026 for Dürr internal AI adoption.
+      result: >
+        Nothing published in 2026 on internal adoption. The Annual Report 2025,
+        published March 2026, is the most recent in-scope source.
+  note: >
+    Six distinct searches plus a full-text keyword search of the annual report.
+    Effort exceeded that applied to any company assessed before the protocol was
+    introduced. The low score reflects disclosure, not search depth.
+
+recency_check:
+  performed_on: 2026-08-12
+  searched: Calendar year 2026 for Dürr internal AI use, governance and workforce.
+  found: Annual Report 2025, published 2026-03-26. No other in-window material.
+  score_changes: none
+
+scores:
+
+  - dimension: data_foundation
+    score: 0
+    anchor_applied: No public reference to data platform work, data integration or data governance.
+    rationale: >
+      No disclosure of Dürr's own data estate was located under the full protocol.
+      Manufacturing execution systems and analytics referenced in the annual
+      report are products sold to customers. Recorded as 0 rather than estimated,
+      per the evidence standard.
+    tie_break_applied: false
+    evidence: []
+
+  - dimension: process_automation_depth
+    score: 1
+    anchor_applied: >
+      Internal automation named as an ambition, with no process identified.
+    rationale: >
+      The Supervisory Board is disclosed as having addressed the deployment of AI
+      within the Group, which establishes internal intent at board level. No
+      internal process is named in any company-published source. Anchor 2 requires
+      a named internal process at pilot scope.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          In this context, the Supervisory Board also addressed the deployment of
+          artificial intelligence within the Group as well as business
+          opportunities in the fields of robotics and defense.
+        source_url: https://www.durr-group.com/fileadmin/durr-group.com/Investors/Downloads/Reports/2025/annual-report-2025-EN.pdf
+        published: 2026-03-26
+        document_type: annual report, Supervisory Board report
+        supports: Internal AI deployment discussed at board level, no process named.
+
+  - dimension: agentic_genai_deployment
+    score: 0
+    anchor_applied: >
+      No public reference to generative or agentic AI in the company's own
+      operations.
+    rationale: >
+      No reference to generative or agentic AI used inside Dürr was located under
+      the full protocol. The board-level reference to AI deployment is generic and
+      does not identify generative or agentic technology.
+    tie_break_applied: false
+    evidence: []
+
+  - dimension: governance_readiness
+    score: 2
+    anchor_applied: >
+      AI principles published, or AI referenced within an existing risk or
+      compliance framework.
+    rationale: >
+      AI appears on the agendas of standing governance bodies: it is a stated work
+      priority of the Dürr Technology Council, which advises the Board of
+      Management, and the Supervisory Board addressed AI deployment within the
+      Group. That places AI inside existing governance rather than in a structure
+      of its own. Anchor 3 requires a governance body, policy or accountable role
+      for AI specifically; the Technology Council covers technology strategy
+      broadly, with AI as one of several priorities. No AI policy, AI principles
+      or EU AI Act preparation was located.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Another item on the agenda was dedicated to the work of the Dürr
+          Technology Council, which advises the Board of Management on matters of
+          technology strategy. Ulrich Dietz, Chairman of the Council, summarized
+          the council's current work priorities, including artificial intelligence
+          and automation.
+        source_url: https://www.durr-group.com/fileadmin/durr-group.com/Investors/Downloads/Reports/2025/annual-report-2025-EN.pdf
+        published: 2026-03-26
+        document_type: annual report, Supervisory Board report
+        supports: AI within an existing advisory body's remit, not an AI-specific structure.
+
+  - dimension: workforce_enablement
+    score: 1
+    anchor_applied: >
+      Upskilling mentioned in general terms, without AI specificity.
+    rationale: >
+      Further training appears as a non-financial performance indicator, and
+      training is described for Supervisory Board members on governance topics.
+      No AI-specific employee training was located. Anchor 2 requires AI training
+      offered to a specific group.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          We also use non-financial performance indicators, such as key figures on
+          employee and customer satisfaction, further training,
+          ecology/sustainability, and R&D/innovation.
+        source_url: https://www.durr-group.com/fileadmin/durr-group.com/Investors/Downloads/Reports/2025/annual-report-2025-EN.pdf
+        published: 2026-03-26
+        document_type: annual report, management report
+        supports: Training tracked as an indicator, without AI specificity.
+
+  - dimension: disclosed_outcomes
+    score: 0
+    anchor_applied: No outcomes published.
+    rationale: >
+      No quantified result from Dürr's own AI use was located under the full
+      protocol.
+    tie_break_applied: false
+    evidence: []
+
+excluded_evidence:
+
+  - reference: >
+      A Microsoft partner case study states that Dürr automated workflows
+      including quotation creation, customer dialogues and ticket handling using
+      AI and machine learning, on an Azure landscape built so that Dürr IT and
+      project managers could implement automation initiatives independently.
+    source_url: https://www.quibiq.de/references/duerr/
+    document_type: systems integrator case study
+    would_have_supported: process_automation_depth, agentic_genai_deployment
+    exclusion_reason: >
+      Third-party vendor case study. Under the source hierarchy (METHODOLOGY.md
+      section 4.1) vendor case studies about a company rank no higher than level 4
+      and are treated as interested, because the vendor has a commercial interest
+      in the claim. The page also carries no publication date, failing the
+      evidence standard. Recorded because it is the only located indication of
+      internal process automation at Dürr, and because the process named,
+      quotation creation, is the same one Krones discloses piloting.
+
+  - reference: >
+      DXQanalyze product family and participation in the RoX research project on
+      AI-based robot cell configuration.
+    source_url: https://www.durr.com/en/products/software-controls/dxq/analytics-ai
+    document_type: product page and press release
+    would_have_supported: agentic_genai_deployment
+    exclusion_reason: Products and product-oriented R&D. Vendor evidence.
+
+notes: >
+  Dürr is the lowest-scoring company in the peer set by a wide margin, and the
+  first assessed under the full search protocol. Seven source classes returned
+  two usable passages, both from the Supervisory Board's own report and both
+  governance-adjacent rather than evidence of adoption.
+
+  The result is not that Dürr does nothing with AI internally. A systems
+  integrator case study describes exactly that, and Dürr's board evidently
+  discusses it. The result is that Dürr publishes almost nothing about it, while
+  publishing extensively about the AI it sells. Of the five companies assessed so
+  far, Dürr shows the widest gap between the two.
