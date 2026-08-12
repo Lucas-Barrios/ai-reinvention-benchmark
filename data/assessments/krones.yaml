@@ -1,0 +1,221 @@
+# Assessment: Krones AG
+#
+# Scored against framework v1.2 under methodology v1.3. Scores measure evidence
+# of public disclosure of the company's own AI adoption, not internal capability
+# and not products sold. See METHODOLOGY.md sections 2, 3.1 and 4.
+
+company_id: krones
+company_name: Krones AG
+framework_version: "1.2"
+methodology_version: "1.3"
+assessed_on: 2026-08-12
+assessor: Lucas Barrios
+sources_reviewed_through: 2026-08-12
+
+recency_check:
+  performed_on: 2026-08-12
+  searched: >
+    Calendar years 2025 and 2026 for Krones internal AI use, the quotation
+    project, the announced data platform and AI governance.
+  found: >
+    "A real game changer: Why Krones is investing in AI", 3 December 2025, and
+    the Microsoft Intelligent Manufacturing Award 2026 for Agentic Digital Twins.
+  assessment: >
+    The December 2025 article is entirely product-facing: Ingeniq, Contiloop AI,
+    Dynafill AI, Shopfloor Guidance, Line Observation, AI Order Sequencing and
+    computer vision inspection, all sold to customers and excluded under the
+    scope rule. It contains no update on the internal quotation project, the
+    announced data platform, or internal adoption of any kind. Krones' most
+    recent public account of its own AI adoption therefore remains the article of
+    22 January 2024.
+  score_changes: none
+
+scores:
+
+  - dimension: data_foundation
+    score: 1
+    anchor_applied: >
+      Data described as a strategic priority, with no named platform, programme
+      or owner.
+    rationale: >
+      Krones names data management as a priority and identifies both an owner and
+      an intended platform, but in the future tense. Anchor 2 requires a platform
+      or integration programme to be disclosed as existing, at least at pilot
+      scope. Two and a half years after the announcement no source confirms the
+      platform exists. Resolved downward.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          In particular, efficient data management is of paramount importance to
+          Krones. Together with the Information Management department, the AI
+          teams will develop an overarching data platform that will optimize the
+          governance, quality and availability of data.
+        source_url: https://www.krones.com/en/company/press/magazine/trend/how-krones-is-using-artificial-intelligence.php
+        published: 2024-01-22
+        document_type: company magazine, named author
+        supports: Platform announced as future work, with an owner but no disclosed existence.
+
+  - dimension: process_automation_depth
+    score: 2
+    anchor_applied: >
+      Automation deployed in a named internal process at pilot or single-site
+      scale.
+    rationale: >
+      The quotation system is a named internal process with an AI project running
+      against it at pilot scope, limited to models from packing technology.
+      Anchor 3 requires production across multiple sites, which is not disclosed.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          Internally at Krones, artificial intelligence can be used to overcome
+          existing challenges, for instance within our quotation system. Because
+          our portfolio of models, variants and components is so comprehensive, it
+          can take as long as several weeks for a customer to receive a finished
+          quote.
+        source_url: https://www.krones.com/en/company/press/magazine/trend/how-krones-is-using-artificial-intelligence.php
+        published: 2024-01-22
+        document_type: company magazine, named author
+        supports: A named internal process targeted by an AI project.
+
+  - dimension: agentic_genai_deployment
+    score: 2
+    anchor_applied: >
+      Named internal pilot or proof of concept, with no disclosed production use.
+    rationale: >
+      Krones states the internal quotation project is in a pilot phase, in
+      Krones' own words. No later source updates that status. Anchor 3 requires
+      production with real internal users, which is not disclosed for any
+      internal application.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          We intend to use AI to shorten the wait to mere hours and thus free our
+          employees to work on more complex cases. This project is supported by a
+          cooperation partner that has developed an open-source AI tool. The
+          project is currently still in a pilot phase, working with models from
+          packing technology.
+        source_url: https://www.krones.com/en/company/press/magazine/trend/how-krones-is-using-artificial-intelligence.php
+        published: 2024-01-22
+        document_type: company magazine, named author
+        supports: Explicitly a pilot, in the company's own words.
+
+  - dimension: governance_readiness
+    score: 4
+    anchor_applied: >
+      Governance structure disclosed together with risk classification practice
+      or explicit EU AI Act preparation.
+    rationale: >
+      The strongest governance disclosure in the peer set. Krones discloses a
+      named accountable role, a named governance body with a standing channel to
+      the Executive Board, internally drafted rules for AI use, and explicit
+      preparation for the EU AI Act. Anchor 5 additionally requires human
+      oversight requirements to be disclosed and governance shown applied to
+      named systems, neither of which is present.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Although there is, to date, no legal framework governing artificial
+          intelligence, we are already preparing for forthcoming regulations such
+          as the EU AI Act. As a means to maintain a regular dialogue about it
+          with the Executive Board, Krones has established the Advisory Council on
+          AI Strategy.
+        source_url: https://www.krones.com/en/company/press/magazine/trend/how-krones-is-using-artificial-intelligence.php
+        published: 2024-01-22
+        document_type: company magazine, named author
+        supports: Named governance body plus explicit EU AI Act preparation. Satisfies anchor 4.
+      - quote: >
+          Philipp Olenberg is Head of AI. He and his team work on the development,
+          implementation and governance of AI solutions at Krones.
+        source_url: https://www.krones.com/en/company/press/magazine/trend/how-krones-is-using-artificial-intelligence.php
+        published: 2024-01-22
+        document_type: company magazine, named author
+        supports: Named accountable role with governance explicitly in remit.
+      - quote: >
+          Besides developing proprietary AI solutions, the team also has been
+          drafting clear rules for the use of artificial intelligence and
+          harmonizing them with the strategy of Krones.digital.
+        source_url: https://www.krones.com/en/company/press/magazine/trend/how-krones-is-using-artificial-intelligence.php
+        published: 2024-01-22
+        document_type: company magazine, named author
+        supports: Internal rule-making for AI use.
+
+  - dimension: workforce_enablement
+    score: 3
+    anchor_applied: >
+      Structured AI enablement programme disclosed for a broad employee
+      population.
+    rationale: >
+      A named certificate programme, designed and rolled out across the group,
+      open to employees from all departments, explicitly covering risk
+      identification and mitigation. Anchor 4 requires participation scale or
+      dedicated enablement capability to be disclosed. Krones has a dedicated AI
+      department, but it is a delivery function rather than an enablement
+      function, and no participation figures are given. Resolved downward.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          To ensure that the new technologies are used responsibly, we have also
+          designed and rolled out a dedicated training course across the group.
+          The "AI Training Certificate" enables employees from all departments to
+          use the tools sensibly and to identify and mitigate the risks associated
+          with their application.
+        source_url: https://www.krones.com/en/company/press/magazine/trend/how-krones-is-using-artificial-intelligence.php
+        published: 2024-01-22
+        document_type: company magazine, named author
+        supports: Group-wide, named, rolled out, risk-aware. No participation figures.
+
+  - dimension: disclosed_outcomes
+    score: 1
+    anchor_applied: >
+      Qualitative benefit claims only, such as improved efficiency, with no
+      figure.
+    rationale: >
+      Krones quantifies the problem, several weeks to produce a quote, and the
+      target, mere hours. Both are stated as intent for a project in pilot. No
+      achieved result is published. The dimension definition measures quantified
+      results rather than intentions.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          We intend to use AI to shorten the wait to mere hours and thus free our
+          employees to work on more complex cases.
+        source_url: https://www.krones.com/en/company/press/magazine/trend/how-krones-is-using-artificial-intelligence.php
+        published: 2024-01-22
+        document_type: company magazine, named author
+        supports: Target stated, no achieved outcome published.
+
+excluded_evidence:
+
+  - reference: >
+      Contiloop AI, Dynafill AI, Shopfloor Guidance, Line Observation, AI Order
+      Sequencing, computer vision inspection and the Ingeniq line concept, all AI
+      solutions sold to customers.
+    source_url: https://www.krones.com/en/company/press/magazine/trend/a-real-game-changer-why-krones-is-investing-in-ai.php
+    published: 2025-12-03
+    document_type: company magazine, named author
+    would_have_supported: agentic_genai_deployment
+    exclusion_reason: >
+      Products placed on the market. Vendor evidence, excluded under the scope
+      rule. Notable that Krones' most recent dedicated AI article contains no
+      internal adoption content at all.
+
+  - reference: >
+      Overall winner of the Microsoft Intelligent Manufacturing Award 2026 for
+      AI-based Agentic Digital Twins.
+    source_url: https://www.krones.com/en/company/press/krones-is-overall-winner-of-the-microsoft-intelligent-manufacturing-award-2026.php
+    published: 2026
+    document_type: press release
+    would_have_supported: agentic_genai_deployment
+    exclusion_reason: >
+      Recognition for a product sold to customers. Vendor evidence.
+
+notes: >
+  Krones has the strongest governance disclosure in the peer set and the only
+  score of 4 recorded so far: a named Head of AI, an Advisory Council on AI
+  Strategy with a standing channel to the Executive Board, internally drafted
+  rules for AI use, and explicit EU AI Act preparation stated before the
+  regulation was in force. Against that, its internal deployment has not visibly
+  moved. The quotation project was described as a pilot in January 2024 and no
+  later source updates it, while the announced data platform remains in the
+  future tense two and a half years on. Krones is the clearest case in the peer
+  set of governance running ahead of deployment, the inverse of GEA.
