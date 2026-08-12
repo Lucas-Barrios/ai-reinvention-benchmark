@@ -1,0 +1,205 @@
+# Assessment: TRUMPF SE + Co. KG
+#
+# Scored against framework v1.2. Scores measure evidence of public disclosure of
+# the company's own AI adoption, not internal capability and not products sold.
+# See METHODOLOGY.md sections 2, 3.1 and 4.
+
+company_id: trumpf
+company_name: TRUMPF SE + Co. KG
+framework_version: "1.2"
+assessed_on: 2026-08-12
+assessor: Lucas Barrios
+
+method_note: >
+  TRUMPF is privately held and publishes no statutory sustainability statement
+  comparable to its listed peers. The dominant in-scope source is a newsroom
+  interview with the company's Head of AI. Date shown on the source page as
+  "08/07/2025"; recorded as 2025-08-07 on the assumption that the en_US page uses
+  US date format. The alternative reading is 8 July 2025. Either falls inside the
+  assessment window, so the ambiguity does not affect any score.
+
+scores:
+
+  - dimension: data_foundation
+    score: 1
+    anchor_applied: >
+      Data described as a strategic priority, with no named platform, programme
+      or owner.
+    rationale: >
+      TRUMPF's Head of AI states that technical preconditions are not yet met.
+      That is a candid admission rather than a disclosure of platform work, and
+      no data platform or integration programme for TRUMPF's own estate is named.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          In addition, a number of technical requirements need to be met in order
+          to apply the added value of AI in the individual areas of the company.
+        source_url: https://www.trumpf.com/en_US/newsroom/stories/we-need-ai-to-be-competitive/
+        published: 2025-08-07
+        document_type: newsroom interview, named executive
+        supports: Foundations described as not yet in place.
+
+  - dimension: process_automation_depth
+    score: 1
+    anchor_applied: >
+      Internal automation named as an ambition, with no process identified.
+    rationale: >
+      Functions are named, but as future intent rather than deployment. TRUMPF
+      operates fully connected manufacturing at Ditzingen, Chicago and Taicang,
+      which would plausibly support a higher score, but the available sources for
+      it date from October 2020 and fall outside the assessment window. The
+      evergreen Smart Factory product page carries no publication date and so
+      fails the evidence standard. Scored on what is in window and dated.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          We want to use AI extensively to create added value in as many areas of
+          our company as possible, for example in sales, human resources,
+          research, development and in the production of our products and
+          services.
+        source_url: https://www.trumpf.com/en_US/newsroom/stories/we-need-ai-to-be-competitive/
+        published: 2025-08-07
+        document_type: newsroom interview, named executive
+        supports: Ambition across named functions, stated as intent.
+
+  - dimension: agentic_genai_deployment
+    score: 3
+    anchor_applied: >
+      At least one generative AI application in production with real internal
+      users in a named business function.
+    rationale: >
+      blueGPT is a named internal generative AI tool described as in daily use by
+      a named employee, not as a pilot or trial. Anchor 4 requires multiple
+      applications in internal production or a disclosed agentic workflow across
+      process steps, and only one internal tool is named.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          I also use our internal AI tool blueGPT in my daily work at TRUMPF.
+        source_url: https://www.trumpf.com/en_US/newsroom/stories/we-need-ai-to-be-competitive/
+        published: 2025-08-07
+        document_type: newsroom interview, named executive
+        supports: A named internal generative AI tool in routine production use.
+
+  - dimension: governance_readiness
+    score: 3
+    anchor_applied: >
+      A named governance body, policy or accountable role for AI is disclosed.
+    rationale: >
+      TRUMPF discloses a Head of AI, an accountable role held by a named
+      individual, and describes a cross-functional risk practice spanning legal,
+      IT and cyber security. Anchor 4 additionally requires risk classification
+      practice or explicit EU AI Act preparation. The description is of
+      case-by-case risk consideration rather than a disclosed classification
+      scheme, and no reference to the AI Act was found. Resolved downward.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Sarah Engel, Head of AI at TRUMPF, talks about why the company is
+          relying on artificial intelligence, how it will change the way employees
+          work and where the limits of AI are.
+        source_url: https://www.trumpf.com/en_US/newsroom/stories/we-need-ai-to-be-competitive/
+        published: 2025-08-07
+        document_type: newsroom interview, named executive
+        supports: A named accountable role for AI exists.
+      - quote: >
+          When developing AI, we always first consider what data is being used for
+          which purposes, what the risks are and how we can keep them in check.
+          When it comes to data security, we work closely with our legal, IT and
+          cyber security departments.
+        source_url: https://www.trumpf.com/en_US/newsroom/stories/we-need-ai-to-be-competitive/
+        published: 2025-08-07
+        document_type: newsroom interview, named executive
+        supports: Cross-functional risk practice described, but not a classification scheme.
+
+  - dimension: workforce_enablement
+    score: 3
+    anchor_applied: >
+      Structured AI enablement programme disclosed for a broad employee
+      population.
+    rationale: >
+      Training is offered to all employees across a range of levels, through
+      multiple modalities, with a separate track deepening expertise among
+      internal AI specialists. Anchor 4 requires participation scale to be
+      disclosed, and no figures are given.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          For TRUMPF employees, initial offers are available on our intranet for
+          further training on the topic of AI, from beginners to experts. This
+          includes training courses, mentoring and interdisciplinary working
+          groups. We are constantly expanding our offering. We also train AI
+          experts throughout the company and deepen their expertise in specific
+          specialist areas.
+        source_url: https://www.trumpf.com/en_US/newsroom/stories/we-need-ai-to-be-competitive/
+        published: 2025-08-07
+        document_type: newsroom interview, named executive
+        supports: Structured, broad, multi-modal AI enablement. No participation figures.
+
+  - dimension: disclosed_outcomes
+    score: 1
+    anchor_applied: >
+      Qualitative benefit claims only, such as improved efficiency, with no
+      figure.
+    rationale: >
+      TRUMPF's Head of AI is asked directly whether efficiency gains can be
+      expressed in figures, answers yes, and then provides none. Benefit
+      categories are named but remain unquantified and are framed as identified
+      potential rather than realised results. Higher than a 0 because specific
+      benefit categories are claimed; no higher because no figure, scope or
+      baseline is given.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          Can the efficiency gains achieved through AI be expressed in figures?
+          Engel: Yes. Our aim is to identify fields of application in which AI
+          creates significant value. We want to implement this step by step.
+        source_url: https://www.trumpf.com/en_US/newsroom/stories/we-need-ai-to-be-competitive/
+        published: 2025-08-07
+        document_type: newsroom interview, named executive
+        supports: Direct question about figures answered without figures.
+      - quote: >
+          We have already identified a number of potential benefits, such as
+          faster and more personalized customer service, more cost-effective and
+          comprehensive training, more efficient software development, savings in
+          production costs and energy, and revenue growth thanks to innovations in
+          our products and services.
+        source_url: https://www.trumpf.com/en_US/newsroom/stories/we-need-ai-to-be-competitive/
+        published: 2025-08-07
+        document_type: newsroom interview, named executive
+        supports: Benefit categories named, all unquantified, framed as potential.
+
+excluded_evidence:
+
+  - reference: >
+      TRUMPF opened a fully connected Smart Factory at its Ditzingen headquarters,
+      the third such TRUMPF site after Chicago and Taicang, with networked
+      cutting, bending and welding machines, storage systems, automated guided
+      vehicles and a central control centre.
+    source_url: https://www.trumpf.com/en_US/newsroom/global-press-releases/press-release-detail-page/release/trumpf-opens-new-smart-factory-in-ditzingen/
+    published: 2020-10
+    document_type: press release
+    would_have_supported: process_automation_depth
+    exclusion_reason: >
+      Published October 2020, outside the assessment window of January 2024
+      onward (METHODOLOGY.md section 4.2). The corresponding evergreen product
+      page carries no publication date and fails the evidence standard.
+
+  - reference: >
+      EasyModel AI and the AI filter for VisionLine Detect, AI applications
+      developed by TRUMPF for laser processing.
+    source_url: https://www.trumpf.com/de_INT/newsroom/pressemitteilungen-lokal/pressemitteilung-detailseite-lokal/release/messe-laser-trumpf-macht-mit-kuenstlicher-intelligenz-die-fertigung-effizienter-7866/
+    published: 2024
+    document_type: press release
+    would_have_supported: agentic_genai_deployment
+    exclusion_reason: >
+      Products sold to customers. Vendor evidence, excluded under the scope rule.
+
+notes: >
+  TRUMPF is the only privately held company in the peer set and was included to
+  test the disclosure-bias limitation in METHODOLOGY.md section 7. The result
+  partly refutes that limitation. TRUMPF publishes far less in absolute volume
+  than its listed peers, but what it does publish concerns its own operations,
+  and it therefore scores higher than companies with vastly larger reporting
+  output. Volume of disclosure and relevance of disclosure are not the same
+  thing, and this benchmark measures the second.
