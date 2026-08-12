@@ -1,0 +1,131 @@
+# Assessment framework: dimensions and weights
+#
+# Adopted before any company was assessed. See CHARTER.md, "Integrity commitments".
+# Amendments to this file after assessment has begun must be justified in
+# METHODOLOGY.md and are visible in git history.
+
+version: "1.0"
+adopted: 2026-08-12
+
+scale:
+  min: 0
+  max: 5
+  measures: >
+    Evidence of public disclosure, not internal capability. A company scoring low
+    may be doing excellent work it has chosen not to publish. Every score in this
+    project is a statement about what a company has published.
+
+weighting_principle: >
+  Weights express a view about what most separates leaders from followers in
+  European industrial machinery today. They are a judgement, documented and
+  argued in METHODOLOGY.md, and the published explorer allows any reader to
+  substitute their own. Weights sum to 1.00.
+
+dimensions:
+
+  - id: data_foundation
+    name: Data foundation
+    weight: 0.20
+    definition: >
+      The degree to which the company has consolidated, integrated and governed
+      the data its AI work depends on. Covers platform consolidation, integration
+      of operational and enterprise data, data quality practice, and named
+      stewardship of data assets.
+    why_it_matters: >
+      Agentic and generative systems fail quietly on fragmented data. Sector
+      firms carry decades of plant, product and service data across
+      incompatible systems, which makes this the constraint that most often
+      determines whether anything else is possible.
+    evidence_sources:
+      - Annual and integrated reports, technology and digitalisation sections
+      - Disclosed IT or data platform programmes
+      - Platform and cloud partnership announcements
+      - Interviews with named CIO, CDO or equivalent
+
+  - id: process_automation_depth
+    name: Process automation depth
+    weight: 0.15
+    definition: >
+      How far automation extends into core operating processes, as distinct from
+      the automation the company sells to customers. Covers manufacturing,
+      supply chain, aftersales and back-office processes.
+    why_it_matters: >
+      Machinery firms automate for their customers. Whether they have automated
+      their own operating processes to the same standard is a different question,
+      and the answer indicates how prepared they are to absorb AI into workflow
+      rather than bolt it on.
+    evidence_sources:
+      - Annual report operations and efficiency sections
+      - Disclosed internal transformation or excellence programmes
+      - Shared service and back-office announcements
+      - Careers pages describing internal process roles
+
+  - id: agentic_genai_deployment
+    name: Agentic and generative AI deployment
+    weight: 0.25
+    definition: >
+      Production use of generative and agentic AI, distinguished from pilots,
+      demonstrations and vendor partnership announcements. Production means real
+      users, real workload, in a named business context.
+    why_it_matters: >
+      This is the reinvention frontier and the dimension where the distance
+      between announcement and deployment is widest. Weighted highest because it
+      most sharply separates firms that have operationalised the technology from
+      firms that have discussed it.
+    evidence_sources:
+      - Press releases naming applications in production
+      - Annual report AI sections
+      - Product and platform announcements
+      - Technical blogs and conference presentations by named employees
+
+  - id: governance_readiness
+    name: AI governance readiness
+    weight: 0.15
+    definition: >
+      Disclosed structures for governing AI: published policies or principles,
+      accountable roles or bodies, risk classification practice, EU AI Act
+      preparation, and human oversight requirements.
+    why_it_matters: >
+      For EU manufacturers the AI Act converts governance from a reputational
+      question into a compliance one. Firms that have disclosed structure are
+      better placed to deploy into regulated and safety-relevant processes,
+      which is where much of the sector value sits.
+    evidence_sources:
+      - Published AI policies, principles or position papers
+      - Sustainability and non-financial reports, governance sections
+      - Compliance and risk management disclosures
+      - Regulatory consultation responses
+
+  - id: workforce_enablement
+    name: Workforce enablement
+    weight: 0.10
+    definition: >
+      Programmes to build AI capability in the workforce: training, literacy
+      initiatives, role redesign, internal expert communities, and dedicated
+      internal capability.
+    why_it_matters: >
+      Adoption, not procurement, is the usual failure point. Weighted lowest not
+      because it matters least in practice but because public disclosure on it is
+      the least comparable across firms, so the evidence supports fewer
+      distinctions.
+    evidence_sources:
+      - Sustainability and people reports, training sections
+      - Careers pages and employer branding material
+      - Announced academy, upskilling or partnership programmes
+      - Works council and employee representative statements
+
+  - id: disclosed_outcomes
+    name: Disclosed measurable outcomes
+    weight: 0.15
+    definition: >
+      Whether the company publishes quantified results from AI work: figures with
+      scope, baseline or method, rather than intentions, activity or adjectives.
+    why_it_matters: >
+      Publishing a number is the clearest signal available from outside that a
+      deployment is real and measured. It is also the discipline most absent from
+      sector communication, which makes it discriminating.
+    evidence_sources:
+      - Annual report performance sections
+      - Capital markets day and investor presentations
+      - Case studies with named figures
+      - Press releases quantifying results rather than intent
