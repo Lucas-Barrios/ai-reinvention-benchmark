@@ -1,10 +1,10 @@
-# Assessment framework: dimensions and weights
+# Assessment framework: dimensions, weights and anchored scoring descriptors
 #
 # Adopted before any company was assessed. See CHARTER.md, "Integrity commitments".
 # Amendments to this file after assessment has begun must be justified in
 # METHODOLOGY.md and are visible in git history.
 
-version: "1.0"
+version: "1.1"
 adopted: 2026-08-12
 
 scale:
@@ -14,6 +14,19 @@ scale:
     Evidence of public disclosure, not internal capability. A company scoring low
     may be doing excellent work it has chosen not to publish. Every score in this
     project is a statement about what a company has published.
+  ladder: >
+    Each level describes a threshold of evidence, not a degree of enthusiasm. The
+    generic ladder below governs every dimension; the per-dimension anchors
+    instantiate it in the language of that dimension. Where evidence is ambiguous
+    between two levels, the lower level is recorded and the ambiguity noted in the
+    assessment file.
+  generic_levels:
+    0: No public evidence.
+    1: Stated intent. Strategy language or executive statement, no named initiative.
+    2: Named initiative at pilot, proof-of-concept or single-site scope.
+    3: Production deployment within a defined and disclosed scope.
+    4: Production at scale across the group, with supporting structure disclosed.
+    5: Production at scale with quantified outcomes published.
 
 weighting_principle: >
   Weights express a view about what most separates leaders from followers in
@@ -41,6 +54,13 @@ dimensions:
       - Disclosed IT or data platform programmes
       - Platform and cloud partnership announcements
       - Interviews with named CIO, CDO or equivalent
+    anchors:
+      0: No public reference to data platform work, data integration or data governance.
+      1: Data described as a strategic priority, with no named platform, programme or owner.
+      2: A named data platform or integration programme is disclosed, at pilot or single-site scope.
+      3: A consolidated data platform is in production for at least one business area or plant network.
+      4: Group-wide data platform in production, with data governance roles or standards disclosed.
+      5: Group-wide platform in production with governance disclosed and published measures of data coverage, quality or adoption.
 
   - id: process_automation_depth
     name: Process automation depth
@@ -59,6 +79,13 @@ dimensions:
       - Disclosed internal transformation or excellence programmes
       - Shared service and back-office announcements
       - Careers pages describing internal process roles
+    anchors:
+      0: No public reference to automation of the company's own operating processes.
+      1: Internal automation named as an ambition, with no process identified.
+      2: Automation deployed in a named internal process at pilot or single-site scale.
+      3: Automation in production in at least one core process across multiple sites.
+      4: Automation embedded across several core processes, with process ownership or a transformation programme disclosed.
+      5: As level 4, with published quantified effect on cycle time, cost, throughput or headcount redeployment.
 
   - id: agentic_genai_deployment
     name: Agentic and generative AI deployment
@@ -77,6 +104,13 @@ dimensions:
       - Annual report AI sections
       - Product and platform announcements
       - Technical blogs and conference presentations by named employees
+    anchors:
+      0: No public reference to generative or agentic AI.
+      1: Generative AI named in strategy or an executive statement, with no application identified.
+      2: Named pilot, proof of concept, or vendor partnership, with no disclosed production use.
+      3: At least one generative AI application in production with real users in a named business context.
+      4: Multiple generative AI applications in production, or a disclosed agentic workflow acting across process steps.
+      5: As level 4, with published adoption or outcome figures and a described human oversight model.
 
   - id: governance_readiness
     name: AI governance readiness
@@ -95,6 +129,13 @@ dimensions:
       - Sustainability and non-financial reports, governance sections
       - Compliance and risk management disclosures
       - Regulatory consultation responses
+    anchors:
+      0: No public reference to AI governance, policy or principles.
+      1: General responsible AI or ethics statement, with no structure, owner or process named.
+      2: AI principles published, or AI referenced within an existing risk or compliance framework.
+      3: A named governance body, policy or accountable role for AI is disclosed.
+      4: Governance structure disclosed together with risk classification practice or explicit EU AI Act preparation.
+      5: As level 4, with human oversight requirements disclosed and evidence of governance applied to named systems.
 
   - id: workforce_enablement
     name: Workforce enablement
@@ -113,6 +154,13 @@ dimensions:
       - Careers pages and employer branding material
       - Announced academy, upskilling or partnership programmes
       - Works council and employee representative statements
+    anchors:
+      0: No public reference to AI skills or training.
+      1: Upskilling mentioned in general terms, without AI specificity.
+      2: AI training offered to a specific group, such as engineering or IT.
+      3: Structured AI enablement programme disclosed for a broad employee population.
+      4: Group-wide programme with participation scale or dedicated internal capability disclosed.
+      5: As level 4, with published participation figures and evidence of resulting role or process change.
 
   - id: disclosed_outcomes
     name: Disclosed measurable outcomes
@@ -129,3 +177,10 @@ dimensions:
       - Capital markets day and investor presentations
       - Case studies with named figures
       - Press releases quantifying results rather than intent
+    anchors:
+      0: No outcomes published.
+      1: Qualitative benefit claims only, such as improved efficiency, with no figure.
+      2: A single quantified figure for one initiative, without stated scope, baseline or method.
+      3: Quantified outcomes for at least one initiative with scope described.
+      4: Quantified outcomes across multiple initiatives, or a disclosed group-level AI value target with progress reported.
+      5: As level 4, with baseline, method or independent verification disclosed.
