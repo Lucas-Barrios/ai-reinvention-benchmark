@@ -1,0 +1,103 @@
+# Peer set
+#
+# Selection criteria and substitution policy are documented in METHODOLOGY.md,
+# section 6. Substitutions are recorded in METHODOLOGY.md section 9, never made
+# silently.
+#
+# Identity fields are deliberately minimal. Revenue, headcount and headquarters
+# are omitted rather than asserted without a sourced reference, since this project
+# holds itself to an evidence standard (METHODOLOGY.md section 4) and unsourced
+# context figures would undercut it.
+
+version: "1.0"
+adopted: 2026-08-12
+
+selection_criteria:
+  - Primary business in industrial machinery, equipment or industrial automation
+  - European headquarters
+  - Sufficient public disclosure to score honestly across six dimensions
+  - Together, coverage of a range of sub-segments rather than a single niche
+
+companies:
+
+  - id: siemens
+    legal_name: Siemens AG
+    country: DE
+    ownership: listed
+    segment: Industrial automation and industrial software
+    rationale: >
+      The sector reference point. Siemens sets the standard for what disclosure
+      on industrial AI looks like in Europe, and both sells and operates the
+      technology. Included so that the upper end of the scale is anchored to a
+      real example rather than a theoretical maximum.
+
+  - id: trumpf
+    legal_name: TRUMPF SE + Co. KG
+    country: DE
+    ownership: private
+    segment: Machine tools and laser technology
+    rationale: >
+      A technology leader in machine tools and a deliberate test of the
+      disclosure-bias limitation. As a privately held company TRUMPF publishes
+      less by structure, which makes it useful for showing where this instrument
+      measures communication rather than capability.
+
+  - id: gea
+    legal_name: GEA Group AG
+    country: DE
+    ownership: listed
+    segment: Process equipment for food, beverage and pharmaceutical industries
+    rationale: >
+      Process technology for regulated end markets, where validated and
+      auditable systems are a precondition. A useful case for the governance
+      readiness dimension.
+
+  - id: krones
+    legal_name: Krones AG
+    country: DE
+    ownership: listed
+    segment: Filling and packaging machinery
+    rationale: >
+      A mid-cap specialist with a long-running digital and connected-machinery
+      programme. Represents firms whose AI opportunity sits in aftersales and
+      installed-base services rather than in the factory alone.
+
+  - id: duerr
+    legal_name: Dürr AG
+    country: DE
+    ownership: listed
+    segment: Paint and final assembly systems, automation
+    rationale: >
+      Supplies automation and software into automotive production and operates a
+      dedicated digital business. Represents firms where the boundary between
+      what is sold and what is operated internally is genuinely blurred.
+
+  - id: kion
+    legal_name: KION Group AG
+    country: DE
+    ownership: listed
+    segment: Intralogistics, materials handling and warehouse automation
+    rationale: >
+      Intralogistics is among the most automated corners of the sector, which
+      makes KION a stress test for the process automation depth dimension and
+      for whether high automation coincides with high AI maturity.
+
+  - id: heidelberger
+    legal_name: Heidelberger Druckmaschinen AG
+    country: DE
+    ownership: listed
+    segment: Printing systems and print workflow software
+    rationale: >
+      A firm that has publicly restructured around software, services and
+      subscription models. Represents machinery businesses undergoing an
+      explicit shift from hardware to recurring digital revenue.
+
+  - id: sandvik
+    legal_name: Sandvik AB
+    country: SE
+    ownership: listed
+    segment: Machining, mining and rock-processing equipment
+    rationale: >
+      The one non-German member of the set, included so that findings are not an
+      artefact of a single national reporting culture. Also has a substantial
+      digital and automation portfolio in mining.
