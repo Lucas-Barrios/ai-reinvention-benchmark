@@ -165,6 +165,39 @@ rule pre-commits against it in public.
 **Absence of evidence is scored, and it is scored as absence.** It is not treated
 as a reason to skip the dimension or to interpolate from neighbouring scores.
 
+### 5.1 Minimum search protocol
+
+**Unequal search effort is the largest threat to a benchmark of this kind.** If
+one company is searched harder than another, the scores measure the assessor's
+diligence rather than the companies' disclosure, and the difference is invisible
+to a reader.
+
+Every company is therefore searched across the same seven source classes, and
+the searches are recorded in a `search_log` block in its assessment file,
+including searches that returned nothing.
+
+| # | Source class | Rationale |
+|---|---|---|
+| 1 | Annual report or combined management report | Statutory, dated, authoritative |
+| 2 | Sustainability or non-financial statement | Where governance and workforce disclosure usually sits |
+| 3 | Newsroom and press releases, current and prior year | Announcements and initiatives |
+| 4 | Company magazine, blog or stories section | Where internal use most often surfaces |
+| 5 | Named-executive interviews and conference material | Highest-yield in-scope source observed |
+| 6 | Careers pages and job advertisements | Least guarded signal of internal capability building |
+| 7 | Current-year recency check | Required by section 4.2 |
+
+**On source class 6.** Job advertisements are written to attract candidates, not
+to manage reputation, and they describe capability a company is actually
+building rather than capability it wishes to be seen having. A company running
+AI internally without publicising it will usually leak that fact through hiring.
+
+A protocol establishes that absence of evidence followed a defined search. It
+does not establish absence of activity, and nothing here should be read as
+claiming otherwise.
+
+Introduced in methodology v1.4. Companies assessed before v1.4 were re-run to
+protocol; see section 9.
+
 ## 6. Peer set
 
 Eight European manufacturers, selected on three criteria: primary business in
@@ -240,6 +273,7 @@ the acceleration can influence the outcome. The git history shows that ordering.
 | 1.1 | 2026-08-12 | Anchored descriptors added for all dimensions; generic ladder and tie-break rule introduced |
 | 1.2 | 2026-08-12 | Adopter-not-vendor scope rule added; definitions and anchors for data foundation, agentic deployment and disclosed outcomes narrowed to the company's own operations; governance readiness exempted |
 | 1.3 | 2026-08-12 | Procedural amendment. Assessment window given an explicit upper bound; mandatory current-year recency check added; `sources_reviewed_through` required in every assessment file. No dimension, weight or anchor changed, so `data/dimensions.yaml` remains at 1.2 |
+| 1.4 | 2026-08-12 | Procedural amendment. Minimum search protocol of seven source classes introduced, with a `search_log` required in every assessment file. Adds careers pages and job advertisements as a mandatory source class. No dimension, weight or anchor changed |
 
 ### On the v1.2 amendment
 
@@ -278,6 +312,26 @@ carry a `recency_check` record stating what was searched and what was found.
 
 Recorded here rather than corrected silently, because a benchmark that hides a
 method defect is worth less than one that documents it.
+
+### On the v1.4 amendment
+
+Prompted by an outlier. Dürr scored markedly below every other company assessed,
+and the obvious challenge to a low score is that the assessor did not look hard
+enough. Reviewing search effort across the companies already assessed showed it
+had ranged from three to six sources, unevenly distributed and undocumented.
+
+That unevenness is a more serious defect than any individual score. Where effort
+varies, the results measure the assessor's diligence as much as the companies'
+disclosure, and a reader has no way to tell which they are looking at.
+
+The protocol fixes the source classes rather than the number of searches, so that
+a company with thin disclosure is demonstrably thin rather than merely
+under-searched. Searches returning nothing are recorded, because a null result
+against a defined protocol is itself evidence, while a null result against an
+undefined one is not.
+
+Companies assessed before v1.4 are re-run to protocol, and their `search_log`
+records the date the protocol was applied.
 
 Substitutions to the peer set and any post-assessment amendment to the framework
 are recorded here.
