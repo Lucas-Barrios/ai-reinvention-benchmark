@@ -1,0 +1,259 @@
+# Assessment: GEA Group AG
+#
+# Scored against framework v1.2. Scores measure evidence of public disclosure of
+# the company's own AI adoption, not internal capability and not products sold.
+# See METHODOLOGY.md sections 2, 3.1 and 4.
+
+company_id: gea
+company_name: GEA Group AG
+framework_version: "1.2"
+assessed_on: 2026-08-12
+assessor: Lucas Barrios
+
+method_note: >
+  The FY2025 Annual Report was searched by keyword rather than read in full
+  (1,932 lines). Terms covered artificial intelligence, AI Act, AI governance,
+  AI policy, AI guideline, responsible AI, generative AI, GenAI, AI training,
+  AI skills, internal AI, Chief Digital and Chief Information. Matches for AI
+  concerned strategy framing and product families only; the governance,
+  policy and training searches returned zero matches, which is reported as a
+  finding.
+
+scores:
+
+  - dimension: data_foundation
+    score: 2
+    anchor_applied: >
+      A named data platform or integration programme is disclosed, at pilot or
+      single-site scope.
+    rationale: >
+      GEA Cloud is a named platform in production, and GEA discloses running an
+      internal company-wide tool on it using internal data, which brings it into
+      scope under the scope rule. Anchor 3 requires a consolidated platform in
+      production for a business area, and GEA Cloud's disclosed purpose is
+      overwhelmingly customer machine data rather than GEA's own data estate.
+      Resolved downward.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          GEA BetterBot AI is fed with GEA-internal data and runs securely in the
+          GEA Cloud.
+        source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+        published: 2024-02-19
+        document_type: company story, corporate site
+        supports: A named platform hosting internal data for an internal application.
+      - quote: >
+          More than 6,000 GEA machines are connected to GEA Cloud, a single
+          platform that links every one of GEA's IIoT-ready machines worldwide.
+          This is where all connected machine data is collected, stored according
+          to the strictest security guidelines, and further processed.
+        source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+        published: 2024-02-19
+        document_type: company story, corporate site
+        supports: Platform exists and is in production, though primarily for customer machine data.
+
+  - dimension: process_automation_depth
+    score: 2
+    anchor_applied: >
+      Automation deployed in a named internal process at pilot or single-site
+      scale.
+    rationale: >
+      The Software Excellence Initiative is a named, group-wide programme
+      targeting a core internal process, software development. Anchor 3 requires
+      automation in production across multiple sites, and the initiative is
+      described as being implemented rather than in production, with its
+      automation content unspecified.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          As part of its Mission 30 strategy, GEA is implementing a group-wide
+          Software Excellence Initiative. The initiative pools wide-ranging
+          measures to enhance development efficiency and quality assurance.
+        source_url: https://www.gea.com/en/news/corporate/2025/gea-steps-up-digital-transformation/
+        published: 2025-06-04
+        document_type: corporate press release
+        supports: Named internal process programme, group-wide, in implementation.
+
+  - dimension: agentic_genai_deployment
+    score: 3
+    anchor_applied: >
+      At least one generative AI application in production with real internal
+      users in a named business function.
+    rationale: >
+      BetterBot is company-wide, built in-house, fed with internal data, and used
+      by employees for named functions including service response, market
+      intelligence and marketing. Anchor 4 requires multiple applications in
+      internal production or a disclosed agentic workflow across process steps.
+      Every other generative AI use is described as exploratory or future intent.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          To help realize the potential of generative AI, GEA has developed its
+          own company-wide chatbot GEA BetterBot AI, which is based on OpenAI's
+          ChatGPT as well as Microsoft's Azure OpenAI Service. Launched in 2023,
+          GEA BetterBot AI is fed with GEA-internal data and runs securely in the
+          GEA Cloud. This means employees can draw on GEA-related information
+          within seconds without worrying about confidential data getting out.
+        source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+        published: 2024-02-19
+        document_type: company story, corporate site
+        supports: Company-wide internal generative AI application in use by employees.
+      - quote: >
+          The chatbot can help staff respond quicker to service requests from
+          customers, access market intelligence data or support marketing
+          activities.
+        source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+        published: 2024-02-19
+        document_type: company story, corporate site, quoting Chief Digital Officer
+        supports: Named internal business functions.
+      - quote: >
+          Simultaneously, GEA is aggressively exploring generative AI solutions to
+          increase productivity across its own workforce to boost efficiency,
+          promote innovation and support data-driven decision making across a
+          range of disciplines from R&D, to sales, to service.
+        source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+        published: 2024-02-19
+        document_type: company story, corporate site
+        supports: Everything beyond BetterBot is exploratory, preventing a score of 4.
+
+  - dimension: governance_readiness
+    score: 1
+    anchor_applied: >
+      General responsible AI or ethics statement, with no structure, owner or
+      process named.
+    rationale: >
+      GEA has a named Chief Digital Officer who articulates its generative AI
+      strategy, but no disclosure states that he or anyone else is accountable
+      for AI. Anchor 3 requires a named accountable role for AI. Siemens scored 3
+      on an annual report that explicitly enumerates "Data & Artificial
+      Intelligence" as a board responsibility, and TRUMPF on an explicit Head of
+      AI title. GEA discloses neither. Anchor 2 requires published AI principles
+      or AI within a risk or compliance framework, and keyword search of the 2025
+      Annual Report returned no matches for AI governance, AI policy, responsible
+      AI or EU AI Act. Applying the anchors consistently across the peer set
+      places GEA at 1.
+    tie_break_applied: true
+    note: >
+      The anchors have no rung describing an executive in an adjacent domain
+      whose remit includes AI, which is GEA's actual position. Recorded in
+      BACKLOG.md as a v2 refinement. Not amended mid-assessment, since changing
+      anchors after companies have been scored would invalidate completed
+      assessments.
+    evidence:
+      - quote: >
+          Generative AI plays a vital role in securing GEA's competitiveness. GEA
+          will seize the opportunities of generative AI in areas such as
+          AI-powered software development, generative machine design, intelligent
+          technical documentation as well as in redefining sales and service
+          processes.
+        source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+        published: 2024-02-19
+        document_type: company story, quoting Tom Oelsner, Chief Digital Officer
+        supports: An executive articulates AI strategy, but no accountability for AI is stated.
+      - finding: >
+          Keyword search of the FY2025 Annual Report returned zero matches for
+          "AI governance", "AI policy", "AI guideline", "responsible AI",
+          "EU AI Act", "AI training" and "AI skills".
+        source_url: https://cdn.gea.com/-/media/investors/annual-report/2025/annual-report-2025-en.pdf
+        published: 2026-03
+        document_type: annual report
+        supports: Absence of any published AI governance framework.
+
+  - dimension: workforce_enablement
+    score: 2
+    anchor_applied: >
+      AI training offered to a specific group, such as engineering or IT.
+    rationale: >
+      GEA Academy provides AI-specific training in the form of a prompt
+      engineering tutorial supporting BetterBot adoption. That is genuinely
+      AI-specific, unlike Siemens' digitalization framing. Anchor 3 requires a
+      structured enablement programme for a broad employee population; a single
+      tutorial plus a general learning catalogue does not reach it.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          To help employees build their chatbot "communication skills", the GEA
+          Academy developed a tutorial on prompt engineering. The Academy offers a
+          host of learning opportunities, everything from digital product
+          development to e-commerce skills, data science techniques and agile
+          project management.
+        source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+        published: 2024-02-19
+        document_type: company story, corporate site
+        supports: AI-specific training exists but is a single tutorial, not a programme.
+
+  - dimension: disclosed_outcomes
+    score: 1
+    anchor_applied: >
+      Qualitative benefit claims only, such as improved efficiency, with no
+      figure.
+    rationale: >
+      GEA publishes a figure for an internal process, roughly 20 percent
+      efficiency in industrial software development, but frames it as expected
+      rather than achieved. The dimension definition measures quantified results
+      "rather than intentions, activity or adjectives", and a forecast is an
+      intention with a number attached. No achieved, quantified result from GEA's
+      own AI use was found. All quantified figures located concern customers.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          GEA expects the focus on open-source software, coupled with the growing
+          use of artificial intelligence, to result in an efficiency gain of
+          around 20 percent for developing industrial software solutions.
+        source_url: https://www.gea.com/en/news/corporate/2025/gea-steps-up-digital-transformation/
+        published: 2025-06-04
+        document_type: corporate press release
+        supports: A figure for an internal process, but forward-looking rather than achieved.
+
+excluded_evidence:
+
+  - quote: >
+      Applied to spray drying, GEA OptiPartner is achieving energy efficiency
+      gains averaging 8 percent.
+    source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+    published: 2024-02-19
+    document_type: company story
+    would_have_supported: disclosed_outcomes
+    exclusion_reason: >
+      Outcome achieved by customers using a GEA product. Vendor evidence.
+
+  - quote: >
+      So far, users have reported productivity gains of between five and eight
+      percent.
+    source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+    published: 2024-02-19
+    document_type: company story
+    would_have_supported: disclosed_outcomes
+    exclusion_reason: >
+      GEA InsightPartner Brewery. Results reported by customers, not by GEA in its
+      own operations.
+
+  - reference: >
+      GEA OptiPartner, GEA InsightPartner, GEA Intellicant, GEA DairyNet, GEA
+      X Control and the CattleEye partnership, all AI-powered products sold to
+      customers.
+    source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
+    published: 2024-02-19
+    document_type: company story
+    would_have_supported: agentic_genai_deployment
+    exclusion_reason: >
+      Products placed on the market. Vendor evidence, excluded under the scope rule.
+
+  - quote: >
+      As of year-end 2024, revenue of more than EUR 70 million had already been
+      generated through digital solutions.
+    source_url: https://www.gea.com/en/news/corporate/2025/gea-steps-up-digital-transformation/
+    published: 2025-06-04
+    document_type: corporate press release
+    would_have_supported: disclosed_outcomes
+    exclusion_reason: >
+      Revenue from selling digital products, not an outcome of GEA's own AI
+      adoption.
+
+notes: >
+  GEA has the strongest internal generative AI deployment in the peer set so far,
+  and the weakest governance disclosure. BetterBot is company-wide, built
+  in-house, running on internal data, with employee training attached, which is
+  more than either Siemens or TRUMPF evidences. Yet GEA publishes no AI policy,
+  no AI principles, and names no one accountable for AI. Deployment has run ahead
+  of governance, which is the inverse of the Siemens pattern.
