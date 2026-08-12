@@ -119,6 +119,25 @@ Every score requires a recorded evidence entry containing:
 **A score with no evidence entry is recorded as 0.** It is never estimated,
 inferred from company size, or carried across from a related dimension.
 
+### 4.0a Undated first-party sources
+
+Some company-published pages carry no visible publication date. Where the
+publisher is **the company itself**, such a source may still be scored, subject
+to four conditions:
+
+1. The publisher is the company, not press, a vendor, an integrator or an analyst
+2. The **retrieval date** is recorded in place of the publication date
+3. The evidence entry carries `confidence: reduced`
+4. The assessor records any reason to believe the content predates the window
+
+**Third-party and vendor sources continue to require a publication date.** The
+distinction is publisher identity, not convenience.
+
+The date requirement exists to prevent undated third-party material entering the
+evidence base. It was not designed to discard a company's own published statement
+about itself, and applying it that way produces findings a reader can disprove by
+visiting the company's website. Introduced in v1.5; see section 9.
+
 ### 4.1 Source hierarchy
 
 Where sources conflict, the more accountable document wins:
@@ -274,6 +293,7 @@ the acceleration can influence the outcome. The git history shows that ordering.
 | 1.2 | 2026-08-12 | Adopter-not-vendor scope rule added; definitions and anchors for data foundation, agentic deployment and disclosed outcomes narrowed to the company's own operations; governance readiness exempted |
 | 1.3 | 2026-08-12 | Procedural amendment. Assessment window given an explicit upper bound; mandatory current-year recency check added; `sources_reviewed_through` required in every assessment file. No dimension, weight or anchor changed, so `data/dimensions.yaml` remains at 1.2 |
 | 1.4 | 2026-08-12 | Procedural amendment. Minimum search protocol of seven source classes introduced, with a `search_log` required in every assessment file. Adds careers pages and job advertisements as a mandatory source class. No dimension, weight or anchor changed |
+| 1.5 | 2026-08-12 | Evidence standard amendment. Undated first-party company sources may be scored under four conditions, with retrieval date and a reduced-confidence flag. Third-party and vendor sources continue to require a publication date. No dimension, weight or anchor changed |
 
 ### On the v1.2 amendment
 
@@ -332,6 +352,43 @@ undefined one is not.
 
 Companies assessed before v1.4 are re-run to protocol, and their `search_log`
 records the date the protocol was applied.
+
+### On the v1.5 amendment
+
+Prompted by a case where the rule as written produced a false result.
+
+KION publishes, on its own website and in two languages, that its "first
+productively used generative AI tool MERLIN" is applied to the maintenance
+process of its own industrial trucks. The page carries no visible publication
+date, and the site's newsroom routing prevents the article body from loading;
+five retrieval attempts using a JavaScript-capable browser returned navigation
+structure but never the story. The text was verified from KION's own search
+index, in English and German.
+
+Under the standard as originally written, that evidence would have been excluded
+and KION would have scored 0 on agentic and generative AI deployment. The
+benchmark would have published a zero that KION's own website contradicts.
+
+Before amending, the prior exclusions were re-examined to check whether the date
+requirement had ever been the deciding factor. It had not. TRUMPF's Smart Factory
+evidence was excluded because it dates from October 2020, outside the window.
+Dürr's systems integrator case study was excluded because it comes from an
+interested third party. In both, the absence of a date was a secondary note
+against evidence already excluded for a sufficient independent reason. Applying
+it as the sole ground for exclusion would therefore have been a new precedent,
+introduced in the case where it produced the least defensible answer.
+
+The amendment distinguishes on **publisher identity**, which is principled. A
+company's own statement about itself carries a different evidentiary character
+from an undated third-party claim about it, and the risk the date requirement
+guards against is the second, not the first.
+
+The residual risk, that undated content might predate the assessment window, is
+handled by the reduced-confidence flag and by requiring the assessor to record
+any reason to suspect it. In the MERLIN case the content dates itself: a "first
+productively used generative AI tool" cannot predate 2023.
+
+No completed exclusion changes as a result of this amendment.
 
 Substitutions to the peer set and any post-assessment amendment to the framework
 are recorded here.
