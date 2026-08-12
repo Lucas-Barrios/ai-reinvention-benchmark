@@ -9,6 +9,25 @@ company_name: Siemens AG
 framework_version: "1.2"
 assessed_on: 2026-08-12
 assessor: Lucas Barrios
+sources_reviewed_through: 2026-08-12
+
+recency_check:
+  performed_on: 2026-08-12
+  searched: >
+    Calendar year 2026 for Siemens internal AI use, own operations, employee
+    deployment, generative AI, AI governance and EU AI Act position.
+  found: >
+    Public statements by CEO Roland Busch during 2026 arguing that the EU AI Act
+    treats industrial AI like consumer AI and that most of a EUR 1 billion
+    industrial AI investment would go to the United States. Reported by
+    third-party press, which under the source hierarchy locates primary sources
+    but is not evidence in itself.
+  assessment: >
+    Regulatory advocacy, not a governance structure and not internal adoption.
+    Lobbying against a regulation is not preparation for compliance with it, so
+    it does not reach anchor 4 on governance readiness. Relevant to the sector
+    trends analysis rather than to scoring.
+  score_changes: none
 
 method_note: >
   The FY2025 Sustainability Statement was searched by keyword rather than read in

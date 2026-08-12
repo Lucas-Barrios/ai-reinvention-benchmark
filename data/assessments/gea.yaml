@@ -9,6 +9,21 @@ company_name: GEA Group AG
 framework_version: "1.2"
 assessed_on: 2026-08-12
 assessor: Lucas Barrios
+sources_reviewed_through: 2026-08-12
+
+recency_check:
+  performed_on: 2026-08-12
+  searched: >
+    Calendar year 2026 for GEA BetterBot, internal AI use, employee deployment
+    and AI governance.
+  found: >
+    Nothing published in 2026. The most recent in-scope disclosure of GEA's own
+    AI adoption remains the company story of 19 February 2024.
+  assessment: >
+    GEA's disclosure of its own AI adoption has not been updated in over two
+    years, while product-side AI communication has continued. Recorded as a
+    finding rather than treated as absence of activity.
+  score_changes: none
 
 method_note: >
   The FY2025 Annual Report was searched by keyword rather than read in full

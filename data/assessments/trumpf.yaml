@@ -9,6 +9,23 @@ company_name: TRUMPF SE + Co. KG
 framework_version: "1.2"
 assessed_on: 2026-08-12
 assessor: Lucas Barrios
+sources_reviewed_through: 2026-08-12
+
+recency_check:
+  performed_on: 2026-08-12
+  searched: >
+    Calendar year 2026 for TRUMPF internal AI use, blueGPT, employee deployment
+    and own process adoption.
+  found: >
+    TRUMPF became a partner of the IPAI artificial intelligence network in
+    Heilbronn, reported July 2026, and trade coverage of new AI roles being
+    created at the company.
+  assessment: >
+    An external ecosystem partnership and hiring activity. Neither evidences
+    deployment in TRUMPF's own operations, and neither reaches a higher anchor on
+    any dimension. No primary TRUMPF source published in 2026 was found updating
+    the internal position set out in the August 2025 interview.
+  score_changes: none
 
 method_note: >
   TRUMPF is privately held and publishes no statutory sustainability statement
