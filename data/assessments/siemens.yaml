@@ -1,0 +1,207 @@
+# Assessment: Siemens AG
+#
+# Scored against framework v1.2. Scores measure evidence of public disclosure of
+# the company's own AI adoption, not internal capability and not products sold.
+# See METHODOLOGY.md sections 2, 3.1 and 4.
+
+company_id: siemens
+company_name: Siemens AG
+framework_version: "1.2"
+assessed_on: 2026-08-12
+assessor: Lucas Barrios
+
+method_note: >
+  The FY2025 Sustainability Statement was searched by keyword rather than read in
+  full (1,601 lines). Search terms covered artificial intelligence, AI Act, AI
+  governance, responsible AI, generative AI, GenAI, upskilling, reskilling,
+  digital skills, learning, data platform and data governance. Absence of matches
+  is reported as a finding where relevant.
+
+scores:
+
+  - dimension: data_foundation
+    score: 1
+    anchor_applied: >
+      Data described as a strategic priority, with no named platform, programme
+      or owner.
+    rationale: >
+      A board-level owner for Data and AI now exists, which is more than anchor 1
+      strictly describes. But anchor 2 requires a named data platform or
+      integration programme for the company's own data estate, and none is
+      disclosed. Siemens Xcelerator and Industrial Edge are products sold to
+      customers and are excluded under the scope rule. Ambiguity between 1 and 2
+      resolved downward.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Dr. Peter Koerte is Siemens' Chief Technology Officer and Chief Strategy
+          Officer. His special responsibilities include Siemens Advanta, Siemens
+          Xcelerator, Foundational Technologies and, as of 1 October 2025, Data &
+          Artificial Intelligence.
+        source_url: https://assets.new.siemens.com/siemens/assets/api/uuid:dea0c623-1ae9-4ef0-a69a-31d8eb7b39fb/sustainability-statement.pdf
+        published: 2025-11
+        document_type: sustainability statement, part of the combined management report
+        supports: A named owner exists at Managing Board level.
+
+  - dimension: process_automation_depth
+    score: 2
+    anchor_applied: >
+      Automation deployed in a named internal process at pilot or single-site
+      scale.
+    rationale: >
+      The Electronics Factory Erlangen is the one internal site with a named
+      process disclosed. Anchor 3 requires production across multiple sites, and
+      no such disclosure was found.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          But it's happening at the Siemens Electronics Factory Erlangen. Here, we
+          are exploring the potential of generative AI on the shopfloor and its
+          role in transforming the future of industrial operations.
+        source_url: https://blog.siemens.com/2025/03/innovative-problem-solver-for-the-challenges-of-tomorrow-a-siemens-industrial-copilot-at-the-electronics-factory-erlangen/
+        published: 2025-03
+        document_type: company blog, named author
+        note: >
+          Page body is JavaScript-rendered and could not be retrieved. Quotation
+          is taken from the page's own meta description, which is Siemens copy.
+
+  - dimension: agentic_genai_deployment
+    score: 2
+    anchor_applied: >
+      Named internal pilot or proof of concept, with no disclosed production use.
+    rationale: >
+      Siemens' own language is "exploring the potential", and the page is titled
+      "Exploring generative AI on the shopfloor". Third-party coverage describes
+      the deployment as implemented across soldering machines, but under the
+      source hierarchy third-party press locates primary sources and is never
+      evidence itself. An initial score of 3 was revised down when the primary
+      wording was checked.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Here, we are exploring the potential of generative AI on the shopfloor
+          and its role in transforming the future of industrial operations.
+        source_url: https://blog.siemens.com/2025/03/innovative-problem-solver-for-the-challenges-of-tomorrow-a-siemens-industrial-copilot-at-the-electronics-factory-erlangen/
+        published: 2025-03
+        document_type: company blog, named author
+
+  - dimension: governance_readiness
+    score: 3
+    anchor_applied: >
+      A named governance body, policy or accountable role for AI is disclosed.
+    rationale: >
+      Data and Artificial Intelligence is an explicit special responsibility of a
+      named Managing Board member from 1 October 2025. That satisfies anchor 3
+      through an accountable role. Anchor 4 additionally requires risk
+      classification practice or explicit EU AI Act preparation, and the FY2025
+      Sustainability Statement contains no occurrence of "AI Act", "AI
+      governance", "responsible AI" or "generative AI".
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Dr. Peter Koerte is Siemens' Chief Technology Officer and Chief Strategy
+          Officer. His special responsibilities include Siemens Advanta, Siemens
+          Xcelerator, Foundational Technologies and, as of 1 October 2025, Data &
+          Artificial Intelligence.
+        source_url: https://assets.new.siemens.com/siemens/assets/api/uuid:dea0c623-1ae9-4ef0-a69a-31d8eb7b39fb/sustainability-statement.pdf
+        published: 2025-11
+        document_type: sustainability statement, part of the combined management report
+      - finding: >
+          Keyword search of the FY2025 Sustainability Statement returned zero
+          matches for "AI Act", "AI governance", "responsible AI", "AI
+          principles", "generative AI" and "GenAI".
+        source_url: https://assets.new.siemens.com/siemens/assets/api/uuid:dea0c623-1ae9-4ef0-a69a-31d8eb7b39fb/sustainability-statement.pdf
+        published: 2025-11
+        document_type: sustainability statement, part of the combined management report
+        supports: Absence of disclosure preventing a score of 4.
+
+  - dimension: workforce_enablement
+    score: 1
+    anchor_applied: >
+      Upskilling mentioned in general terms, without AI specificity.
+    rationale: >
+      Siemens discloses substantial learning commitments and ties them to
+      executive compensation, which is stronger governance of learning than most
+      peers will show. But the framing throughout is "digitalization and
+      sustainability", never artificial intelligence. Anchor 2 requires AI
+      training offered to a specific group, and that is not disclosed.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Increase our average total annual learning hours to 40 per person.
+        source_url: https://assets.new.siemens.com/siemens/assets/api/uuid:dea0c623-1ae9-4ef0-a69a-31d8eb7b39fb/sustainability-statement.pdf
+        published: 2025-11
+        document_type: sustainability statement, part of the combined management report
+        supports: Target for fiscal 2030; reported actual 36.6 hours, status "in progress".
+      - quote: >
+          Reach 3 million people in our business ecosystem and society with our
+          learning offerings focused on digitalization and sustainability.
+        source_url: https://assets.new.siemens.com/siemens/assets/api/uuid:dea0c623-1ae9-4ef0-a69a-31d8eb7b39fb/sustainability-statement.pdf
+        published: 2025-11
+        document_type: sustainability statement, part of the combined management report
+        supports: Learning framed as digitalization, not AI. Also directed at the ecosystem rather than only employees.
+      - quote: >
+          For fiscal 2025 the index comprises two performance metrics with a total
+          weighting of 20%: total learning hours per person and reduction of CO2
+          emissions from own business operations (Scope 1 & 2).
+        source_url: https://assets.new.siemens.com/siemens/assets/api/uuid:dea0c623-1ae9-4ef0-a69a-31d8eb7b39fb/sustainability-statement.pdf
+        published: 2025-11
+        document_type: sustainability statement, part of the combined management report
+        supports: Learning is tied to executive compensation, but without AI specificity.
+
+  - dimension: disclosed_outcomes
+    score: 0
+    anchor_applied: No outcomes published.
+    rationale: >
+      No quantified result from Siemens' own use of AI was found. Every
+      quantified figure located concerns customers using Siemens products and is
+      excluded under the scope rule. Recorded as 0 rather than estimated, per the
+      evidence standard.
+    tie_break_applied: false
+    evidence: []
+
+# Evidence reviewed and deliberately excluded under the scope rule
+# (METHODOLOGY.md section 3.1). Recorded so that the rule can be seen being
+# applied rather than merely asserted.
+
+excluded_evidence:
+
+  - quote: >
+      First pilot use cases have shown that the Industrial Copilot for maintenance
+      helps save on average 25% reactive maintenance time.
+    source_url: https://press.siemens.com/global/en/pressrelease/siemens-expands-industrial-copilot-new-generative-ai-powered-maintenance-offering
+    published: 2025-03-24
+    document_type: press release
+    would_have_supported: disclosed_outcomes
+    exclusion_reason: >
+      Outcome achieved by customers using a Siemens product, not by Siemens in its
+      own operations.
+
+  - quote: >
+      Over 100 customers in Europe and the US are using the Siemens Industrial
+      Copilot to improve efficiency, cut downtime, and address labor shortages.
+    source_url: https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai
+    published: 2024-10-24
+    document_type: press release
+    would_have_supported: agentic_genai_deployment
+    exclusion_reason: >
+      Describes customer adoption of a product Siemens sells. Vendor evidence.
+
+  - quote: >
+      More than 120,000 engineers can now leverage the Copilot, upskilling experts
+      and workers in programming with GenAI.
+    source_url: https://press.siemens.com/global/en/pressrelease/siemens-and-microsoft-scale-industrial-ai
+    published: 2024-10-24
+    document_type: press release
+    would_have_supported: workforce_enablement
+    exclusion_reason: >
+      The 120,000 engineers are users of Siemens engineering software at customer
+      organisations, not Siemens employees.
+
+notes: >
+  Siemens is the company most publicly identified with industrial AI in Europe,
+  and scores low here. That is the instrument working as designed rather than a
+  contradiction. Siemens discloses extensively about the AI it sells and very
+  little about the AI it runs on. The three strongest pieces of evidence
+  encountered during this assessment were all excluded as vendor evidence, and
+  the single in-scope deployment is described by Siemens itself as exploratory.
