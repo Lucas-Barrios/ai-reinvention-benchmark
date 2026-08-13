@@ -1,16 +1,6 @@
----
-title: AI Reinvention Benchmark
-emoji: "\U0001F4CA"
-colorFrom: blue
-colorTo: gray
-sdk: streamlit
-sdk_version: 1.35.0
-app_file: app.py
-pinned: false
-license: mit
----
-
 # AI Reinvention Benchmark: European Industrial Machinery
+
+**Live explorer:** https://ai-reinvention-benchmark.streamlit.app
 
 An evidence-based benchmark of AI maturity across eight European industrial
 machinery manufacturers, scored from public disclosure against a rubric fixed
