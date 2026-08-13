@@ -1,0 +1,270 @@
+# Assessment: Heidelberger Druckmaschinen AG
+#
+# Scored against framework v1.2 under methodology v1.5. Scores measure evidence
+# of public disclosure of the company's own AI adoption, not internal capability
+# and not products sold. See METHODOLOGY.md sections 2, 3.1, 4, 4.0a and 5.1.
+
+company_id: heidelberger
+company_name: Heidelberger Druckmaschinen AG
+framework_version: "1.2"
+methodology_version: "1.5"
+assessed_on: 2026-08-12
+assessor: Lucas Barrios
+sources_reviewed_through: 2026-08-12
+
+search_log:
+  protocol_applied_on: 2026-08-12
+  classes:
+    - class: 1
+      source: >
+        Two separate documents. Combined Group Sustainability Report 2025/2026
+        (non-financial report, 2,263 lines) and the financial Geschäftsbericht
+        2025/2026 (1,380 lines).
+      searched: >
+        Keyword search of both for AI Act, AI governance, responsible AI, AI
+        policy, generative AI, artificial intelligence / künstliche Intelligenz,
+        KI, MES, Qualitätssicherung, Softwareentwicklung, internal AI and AI
+        training.
+      result: >
+        The financial annual report carried the load-bearing evidence, not the
+        sustainability report. See method_note on this. Located the eCall service
+        ticket routing passage. Zero matches in either document for AI Act, AI
+        governance, responsible AI or AI policy.
+    - class: 2
+      source: Combined Group Sustainability Report 2025/2026
+      searched: Governance, workforce and non-financial AI disclosure.
+      result: >
+        One AI passage, listing AI among market opportunities in a climate-
+        transition context: "new ways of working through the use of artificial
+        intelligence. The resulting opportunities and risks are taken into account
+        as part of the corporate strategy." Not an AI governance statement.
+        Generic employee training disclosed without AI specificity.
+    - class: 3
+      source: Newsroom and press releases
+      searched: Internal AI, own processes, employees, generative AI, current and prior year.
+      result: >
+        Extensive AI communication, almost entirely product-facing: Prinect Touch
+        Free autonomous printing, the "AI-controlled print shop of the future",
+        Speedmaster AI assistance, all installed at named customer print shops.
+    - class: 4
+      source: Company site and stories
+      searched: Internal AI tool names and own-operations adoption.
+      result: >
+        Product content only. A customer-facing "AI tool where users can ask
+        questions" and the Prinect ecosystem.
+    - class: 5
+      source: Named-executive interviews and conference material
+      searched: >
+        CEO and board on AI and internal transformation, including the
+        digitalisation board mandate held by Dr. Ulrich Hermann.
+      result: >
+        Executive commentary concerns the product transformation toward an
+        AI-controlled printing house and organisational digitalisation in general
+        terms. No internal AI adoption programme or AI accountability disclosed.
+    - class: 6
+      source: Careers pages and job advertisements
+      searched: Internal AI capability roles via the HEIDELBERG Workday portal.
+      result: >
+        Workday portal returned a service-outage page at time of assessment.
+        Aggregator results showed AI-method roles framed around tool-wear
+        detection and academic theses, product-development oriented. No internal
+        AI platform or capability roles surfaced.
+    - class: 7
+      source: Current-year recency check
+      searched: Calendar year 2026 for Heidelberger internal AI adoption and governance.
+      result: >
+        2026 material concerns Prinect Touch Free deliveries at customer sites,
+        presented at Prinect User Days 2026. Product-facing.
+
+method_note: >
+  A search-strategy error was caught during this assessment and is recorded
+  because it nearly produced a materially wrong score. The initial class 1 search
+  covered only the Combined Group Sustainability Report and treated class 1 as
+  complete. On that basis the company was heading for a score near 0.10. Heidelberg
+  publishes a separate financial Geschäftsbericht, and that document, not the
+  sustainability report, contains the eCall internal-routing evidence. The lesson,
+  that "annual report" and "sustainability report" are distinct class 1 documents
+  and both must be searched, has been flagged for the re-run of Siemens, GEA and
+  KION, each of which had only one report searched.
+
+  A second-hand search summary attributed to Heidelberg a statement that AI
+  "already successfully supports software development" for quality assurance.
+  Direct keyword search of the financial annual report did not locate that
+  wording. It is therefore treated as unverified and not scored.
+
+recency_check:
+  performed_on: 2026-08-12
+  searched: Calendar year 2026 for Heidelberger internal AI use, governance and workforce.
+  found: Prinect Touch Free customer deliveries, Prinect User Days 2026. Product-facing.
+  score_changes: none
+
+scores:
+
+  - dimension: data_foundation
+    score: 0
+    anchor_applied: No public reference to data platform work, data integration or data governance.
+    rationale: >
+      The HEIDELBERG Cloud is disclosed, but explicitly as a customer data pool:
+      "die HEIDELBERG Cloud, mit der ein umfangreicher Datenpool für alle Kunden
+      nutzbar gemacht wird." No platform or governance for Heidelberg's own data
+      estate is disclosed. Recorded as 0 per the evidence standard.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          Die Basis für diese digitalen Dienstleistungen ist die HEIDELBERG Cloud,
+          mit der ein umfangreicher Datenpool für alle Kunden nutzbar gemacht wird.
+        source_url: https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_cfs_2526_report.pdf
+        published: 2026-06-10
+        document_type: annual report (Geschäftsbericht)
+        supports: Cloud platform is customer-facing, not an internal data estate.
+
+  - dimension: process_automation_depth
+    score: 2
+    anchor_applied: >
+      Automation deployed in a named internal process at pilot or single-site
+      scale.
+    rationale: >
+      AI-based routing of service tickets to Heidelberg's own service employees is
+      a named internal process in production, and at meaningful volume, roughly
+      220,000 tickets per year. Anchor 3 requires production disclosed across
+      multiple sites. The routing passage itself does not state multi-site scope;
+      the company's 250-location network is described elsewhere in the report, and
+      importing it here would be inference rather than disclosure. Consistent with
+      KION MERLIN, which was held at 2 on the same ground. Resolved downward.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Mit dem eCall wird automatisch ein Serviceticket in der HEIDELBERG-Cloud
+          [erstellt]. Rund 220.000 Servicetickets pro Jahr werden bearbeitet.
+          Anhand der Auswertung verschiedener Parameter sorgt ein intelligentes
+          Routing anschließend dafür, dass das Ticket bei Servicemitarbeitenden
+          landet, die mit dem Fehlerbild bestens vertraut sind. Hierbei helfen
+          KI-basierte Systeme.
+        source_url: https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_cfs_2526_report.pdf
+        published: 2026-06-10
+        document_type: annual report (Geschäftsbericht)
+        supports: AI routing of ~220,000 internal service tickets per year to own staff.
+        note: >
+          The passage closes "die HEIDELBERG kontinuierlich für die Kunden und den
+          Service ausbaut", so the AI systems serve both customer and internal
+          service. The internal element is real but sits within a customer-benefit
+          narrative.
+
+  - dimension: agentic_genai_deployment
+    score: 0
+    anchor_applied: >
+      No public reference to generative or agentic AI in the company's own
+      operations.
+    rationale: >
+      Heidelberg introduced AI-based functions including a service chatbot and
+      intelligent online help, but these were "im Markt eingeführt", introduced to
+      the market as products. No generative or agentic AI used inside Heidelberg's
+      own operations was located.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          HEIDELBERG hat im Berichtsjahr vielfältige KI-basierte Funktionen
+          erfolgreich im Markt eingeführt. Dazu zählen ein neuer Service-Chatbot,
+          intelligente Online-Hilfesysteme.
+        source_url: https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_cfs_2526_report.pdf
+        published: 2026-06-10
+        document_type: annual report (Geschäftsbericht)
+        supports: Generative AI functions are products introduced to the market. Out of scope.
+
+  - dimension: governance_readiness
+    score: 0
+    anchor_applied: No public reference to AI governance, policy or principles.
+    rationale: >
+      No AI governance disclosure was located across seven source classes and two
+      separate annual documents. The single AI passage in the sustainability
+      report treats AI as a market opportunity alongside fibre-based packaging,
+      not as something to be governed. Zero keyword matches for AI Act, AI
+      governance, responsible AI or AI policy in either document.
+    tie_break_applied: false
+    evidence:
+      - finding: >
+          Zero matches for "AI Act", "AI governance", "responsible AI" and "AI
+          policy" across both the Combined Group Sustainability Report 2025/2026
+          and the financial Geschäftsbericht 2025/2026.
+        source_url: https://www.heidelberg.com/global/media/en/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_apc_2526_non_financial_report.pdf
+        published: 2026-06-10
+        document_type: sustainability report and annual report
+        supports: Complete absence of AI governance disclosure.
+
+  - dimension: workforce_enablement
+    score: 1
+    anchor_applied: >
+      Upskilling mentioned in general terms, without AI specificity.
+    rationale: >
+      Personnel development and further training are disclosed as promoting
+      employee development, but without AI specificity. Anchor 2 requires AI
+      training offered to a specific group.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          HEIDELBERG's personnel development and further training measures promote
+          the professional and personal development of employees and increase job
+          satisfaction.
+        source_url: https://www.heidelberg.com/global/media/en/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_apc_2526_non_financial_report.pdf
+        published: 2026-06-10
+        document_type: sustainability report
+        supports: Generic training disclosure, no AI specificity.
+
+  - dimension: disclosed_outcomes
+    score: 1
+    anchor_applied: >
+      Qualitative benefit claims only, such as improved efficiency, with no
+      figure.
+    rationale: >
+      The 220,000 figure quantifies ticket volume, not an outcome of the AI. The
+      benefit of the AI routing, tickets reaching the best-matched staff, is
+      stated qualitatively with no figure, baseline or scope attached. Anchor 2
+      requires a quantified figure for the outcome itself.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Anhand der Auswertung verschiedener Parameter sorgt ein intelligentes
+          Routing anschließend dafür, dass das Ticket bei Servicemitarbeitenden
+          landet, die mit dem Fehlerbild bestens vertraut sind.
+        source_url: https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_cfs_2526_report.pdf
+        published: 2026-06-10
+        document_type: annual report (Geschäftsbericht)
+        supports: Qualitative benefit for a production tool, unquantified.
+
+excluded_evidence:
+
+  - reference: >
+      Prinect Touch Free autonomous printing workflow, the AI-controlled print
+      shop of the future, Speedmaster AI assistance functions, and a customer
+      service chatbot, all installed or offered at customer print shops.
+    source_url: https://www.heidelberg.com/global/media/de/global_media/investor_relations/ir_reports_and_presentations/2025_26/260610_cfs_2526_report.pdf
+    published: 2026-06-10
+    document_type: annual report and press releases
+    would_have_supported: agentic_genai_deployment, process_automation_depth
+    exclusion_reason: >
+      Products placed on the market and installed at named customers. Vendor
+      evidence, excluded under the scope rule. This is the large majority of
+      Heidelberg's AI communication.
+
+  - reference: >
+      A second-hand search summary stating Heidelberg uses AI in quality assurance
+      and that it "already successfully supports software development".
+    source_url: null
+    document_type: third-party search summary
+    would_have_supported: process_automation_depth, agentic_genai_deployment
+    exclusion_reason: >
+      Not verifiable. Direct keyword search of the financial annual report did not
+      locate this wording, and no first-party source for it was found. Recorded so
+      the rejection is visible rather than silent.
+
+notes: >
+  Heidelberger ties Dürr at the bottom of the peer set on 0.55/5, reached by the
+  opposite route. Dürr has AI on its governance agendas and no disclosed internal
+  automation; Heidelberger has a real internal AI process, service ticket routing
+  at scale, and no AI governance whatsoever.
+
+  This assessment is also the clearest illustration of why the search protocol
+  matters. Searching only the sustainability report would have scored Heidelberger
+  near 0.10 and missed a genuine internal deployment sitting in the separate
+  financial annual report. The finding survived only because the source base was
+  widened. The correction is recorded in method_note.
