@@ -71,8 +71,7 @@ st.info(
     "**Headline finding.** Across all eight companies, not one publishes a "
     "quantified result from its own AI use. Disclosed measurable outcomes is "
     "the weakest dimension in the set. Every other figure these firms publish "
-    "attaches to a product or a customer.",
-    icon="i",
+    "attaches to a product or a customer."
 )
 
 # --------------------------------------------------------------------------- #
