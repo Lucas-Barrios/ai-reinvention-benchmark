@@ -16,7 +16,7 @@ on:
     branches: [main]
 
 env:
-  HF_USERNAME: your-hf-username
+  HF_USERNAME: Lucas-Barrios
   HF_SPACE: ai-reinvention-benchmark
 
 jobs:
