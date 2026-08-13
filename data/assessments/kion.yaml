@@ -29,6 +29,15 @@ search_log:
       result: >
         Zero matches for every AI term searched. The document contains a "Talent
         development and learnings" section, but no AI-specific content anywhere.
+    - class: 2b
+      source: FY2025 Annual Report / combined management report (second document, re-run)
+      searched: AI governance, AI policy, responsible AI, accountable AI role.
+      result: >
+        Second-document check added during the v1.4 re-run block. The annual report
+        records that AI topics were discussed among the Supervisory Board's general
+        governance matters, but discloses no named AI policy, governance body or
+        accountable role. No verifiable AI-governance instrument located. Governance
+        score of 0 re-confirmed rather than changed.
     - class: 3
       source: Newsroom and press releases
       searched: >

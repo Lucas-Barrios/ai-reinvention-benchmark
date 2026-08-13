@@ -10,6 +10,44 @@ framework_version: "1.2"
 assessed_on: 2026-08-12
 assessor: Lucas Barrios
 sources_reviewed_through: 2026-08-12
+methodology_version: "1.5"
+
+search_log:
+  protocol_applied_on: 2026-08-12
+  note: >
+    Protocol applied retrospectively during the v1.4 re-run block. The original
+    assessment searched only the FY2025 Annual Report for governance and missed a
+    separately published AI policy, producing a false governance score of 1. The
+    second-document check corrected it. See governance rescore_note.
+  classes:
+    - class: 1
+      source: FY2025 Annual Report
+      searched: AI governance, AI policy, responsible AI, EU AI Act, AI training.
+      result: Zero matches. This was the source of the original, incorrect, governance 1.
+    - class: 2
+      source: >
+        Sustainability downloads and published policy documents (second document,
+        added on re-run).
+      searched: AI governance and responsible AI policies.
+      result: >
+        Found a named, published "GEA AI Governance and Excellence Policy" as a
+        downloadable document, alongside a Corporate Digital Responsibility Policy.
+        Verified first-party via browser. This is the disclosure the annual report
+        lacked.
+    - class: 3
+      source: Company stories
+      searched: Internal AI use.
+      result: >
+        "Brains of steel" story (2024-02-19) evidences BetterBot internal
+        deployment. See scores.
+    - class: 4
+      source: Company stories and GEA Digital
+      searched: Named internal AI applications.
+      result: BetterBot (internal) in scope; product families excluded.
+    - class: 7
+      source: Current-year recency check
+      searched: 2026 internal AI and governance.
+      result: See recency_check.
 
 recency_check:
   performed_on: 2026-08-12
@@ -132,29 +170,36 @@ scores:
         supports: Everything beyond BetterBot is exploratory, preventing a score of 4.
 
   - dimension: governance_readiness
-    score: 1
+    score: 3
     anchor_applied: >
-      General responsible AI or ethics statement, with no structure, owner or
-      process named.
+      A named governance body, policy or accountable role for AI is disclosed.
     rationale: >
-      GEA has a named Chief Digital Officer who articulates its generative AI
-      strategy, but no disclosure states that he or anyone else is accountable
-      for AI. Anchor 3 requires a named accountable role for AI. Siemens scored 3
-      on an annual report that explicitly enumerates "Data & Artificial
-      Intelligence" as a board responsibility, and TRUMPF on an explicit Head of
-      AI title. GEA discloses neither. Anchor 2 requires published AI principles
-      or AI within a risk or compliance framework, and keyword search of the 2025
-      Annual Report returned no matches for AI governance, AI policy, responsible
-      AI or EU AI Act. Applying the anchors consistently across the peer set
-      places GEA at 1.
+      Revised from 1 to 3 during the re-run. The original score searched only the
+      FY2025 Annual Report, which carried no AI governance content. The second
+      document, GEA's sustainability downloads, publishes a named "GEA AI
+      Governance and Excellence Policy" as a live, downloadable document alongside
+      a Corporate Digital Responsibility Policy. A named, published AI policy is a
+      disclosed AI governance instrument, satisfying anchor 3. Anchor 4 requires
+      risk classification practice or explicit EU AI Act preparation; the policy
+      contents were not read, so anchor 4 was not assessed and the score is held
+      conservatively at 3. A future pass reading the policy could support a
+      revision to 4.
     tie_break_applied: true
-    note: >
-      The anchors have no rung describing an executive in an adjacent domain
-      whose remit includes AI, which is GEA's actual position. Recorded in
-      BACKLOG.md as a v2 refinement. Not amended mid-assessment, since changing
-      anchors after companies have been scored would invalidate completed
-      assessments.
+    rescore_note: >
+      This correction came from the v1.4 second-document check. The original
+      assessment was a clear case of the single-report search error that the
+      protocol was written to catch: GEA's AI governance sits in a published
+      policy, not in the annual report, and searching only the annual report
+      produced a false 1. Verified first-party via browser on GEA's own
+      sustainability downloads page.
     evidence:
+      - quote: >
+          GEA AI Governance and Excellence Policy (published PDF, GEA sustainability
+          downloads).
+        source_url: https://www.gea.com/en/sustainability/downloads/
+        retrieved: 2026-08-12
+        document_type: published company policy, first-party
+        supports: A named, published AI governance policy. Satisfies anchor 3.
       - quote: >
           Generative AI plays a vital role in securing GEA's competitiveness. GEA
           will seize the opportunities of generative AI in areas such as
@@ -164,15 +209,12 @@ scores:
         source_url: https://www.gea.com/en/stories/ai-drives-sustainability-for-gea-and-customers/
         published: 2024-02-19
         document_type: company story, quoting Tom Oelsner, Chief Digital Officer
-        supports: An executive articulates AI strategy, but no accountability for AI is stated.
-      - finding: >
-          Keyword search of the FY2025 Annual Report returned zero matches for
-          "AI governance", "AI policy", "AI guideline", "responsible AI",
-          "EU AI Act", "AI training" and "AI skills".
-        source_url: https://cdn.gea.com/-/media/investors/annual-report/2025/annual-report-2025-en.pdf
-        published: 2026-03
-        document_type: annual report
-        supports: Absence of any published AI governance framework.
+        supports: Executive-level AI strategy ownership, corroborating the governance posture.
+    superseded_finding: >
+      The original score of 1 rested on zero AI-governance matches in the FY2025
+      Annual Report. That finding stands for that document, but the annual report
+      was the wrong place to look: the governance disclosure is a standalone
+      published policy. Retained here so the correction is visible.
 
   - dimension: workforce_enablement
     score: 2

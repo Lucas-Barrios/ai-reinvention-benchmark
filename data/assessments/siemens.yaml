@@ -10,6 +10,61 @@ framework_version: "1.2"
 assessed_on: 2026-08-12
 assessor: Lucas Barrios
 sources_reviewed_through: 2026-08-12
+methodology_version: "1.5"
+
+search_log:
+  protocol_applied_on: 2026-08-12
+  note: >
+    Protocol applied retrospectively during the v1.4 re-run block. The original
+    assessment predated the search protocol and scored the Erlangen deployment on
+    a page meta description because the article body would not load. On re-run the
+    full article was retrieved with a JavaScript-capable browser, which changed the
+    agentic and outcomes scores. See rescore_note.
+  classes:
+    - class: 1
+      source: >
+        Two documents. Sustainability Statement FY2025 (searched originally) and
+        the Combined Management Report FY2025 (added on re-run).
+      searched: AI governance, internal AI, EU AI Act, data strategy, employees.
+      result: >
+        Sustainability Statement: zero matches for AI Act, AI governance,
+        responsible AI or generative AI. Combined Management Report: the
+        Supervisory Board is disclosed as having discussed the use of AI to
+        optimise internal processes and the Company's data strategy, confirming
+        board-level attention but adding no AI-specific governance structure or
+        AI Act preparation.
+    - class: 3
+      source: Press releases
+      searched: Internal AI use.
+      result: Product and customer-facing (Industrial Copilot, Senseye). Excluded.
+    - class: 4
+      source: Siemens company blog
+      searched: Erlangen Electronics Factory generative AI shopfloor deployment.
+      result: >
+        Full article retrieved via browser, dated 2026-03-20 [published
+        2025-03-20]. Named internal deployment with named employees and reported
+        internal benefit. Load-bearing for the agentic and outcomes scores.
+    - class: 5
+      source: Named-executive material
+      searched: 2026 CEO statements on AI and the EU AI Act.
+      result: Regulatory advocacy; see recency_check. Not governance structure.
+    - class: 7
+      source: Current-year recency check
+      searched: 2026 internal AI, governance.
+      result: See recency_check. No score effect beyond the trends note.
+
+rescore_note: >
+  Two scores were revised during the re-run after the Erlangen article was
+  retrieved in full. Original agentic score was 2, set from the page meta
+  description ("exploring the potential"), the only text available on first pass.
+  The full body states the assistant is "already in successful use and testing"
+  at the named Erlangen plant with four named internal users, and that Siemens is
+  "actively using and testing them internally." That is anchor 3, consistent with
+  KION MERLIN and TRUMPF blueGPT. Original outcomes score was 0; the full article
+  attributes a "significantly reduced" downtime benefit to the internal
+  deployment, a qualitative internal outcome, moving it to 1. The 25% reactive
+  maintenance figure was not used for outcomes: it is the same number as the
+  product press release already excluded, and is framed as potential ("can save").
 
 recency_check:
   performed_on: 2026-08-12
@@ -85,24 +140,41 @@ scores:
           is taken from the page's own meta description, which is Siemens copy.
 
   - dimension: agentic_genai_deployment
-    score: 2
+    score: 3
     anchor_applied: >
-      Named internal pilot or proof of concept, with no disclosed production use.
+      At least one generative AI application in production with real internal
+      users in a named business function.
     rationale: >
-      Siemens' own language is "exploring the potential", and the page is titled
-      "Exploring generative AI on the shopfloor". Third-party coverage describes
-      the deployment as implemented across soldering machines, but under the
-      source hierarchy third-party press locates primary sources and is never
-      evidence itself. An initial score of 3 was revised down when the primary
-      wording was checked.
-    tie_break_applied: true
+      Revised from 2 to 3 during the re-run once the full article was retrieved.
+      The generative AI shopfloor assistant is "already in successful use" at the
+      named Electronics Factory Erlangen, with four named internal users, in a
+      named function (shopfloor maintenance and troubleshooting). Siemens states
+      it is "actively using and testing them internally." That satisfies anchor 3
+      on the same basis as KION MERLIN and TRUMPF blueGPT. Anchor 4 would require
+      multiple internal applications or a disclosed agentic workflow across
+      process steps; one named internal deployment is disclosed. The "and testing"
+      and "exploring" framing was weighed against the named plant, named users and
+      reported benefit, and the corroboration was judged to place it at 3.
+    tie_break_applied: false
     evidence:
       - quote: >
-          Here, we are exploring the potential of generative AI on the shopfloor
-          and its role in transforming the future of industrial operations.
+          At the Siemens Electronics Factory Erlangen, such a generative
+          AI-powered assistant for the shopfloor is already in successful use and
+          testing. This plant produces industrial controllers for machine tools
+          and production machines, as well as drives and frequency converters with
+          up to 1,000 product variants.
         source_url: https://blog.siemens.com/2025/03/innovative-problem-solver-for-the-challenges-of-tomorrow-a-siemens-industrial-copilot-at-the-electronics-factory-erlangen/
-        published: 2025-03
+        published: 2025-03-20
+        document_type: company blog, named author, full text retrieved via browser
+        supports: Generative AI assistant in successful use at a named Siemens plant.
+      - quote: >
+          A major advantage is that we at Siemens are not only developing these
+          generative AI solutions but also actively using and testing them
+          internally.
+        source_url: https://blog.siemens.com/2025/03/innovative-problem-solver-for-the-challenges-of-tomorrow-a-siemens-industrial-copilot-at-the-electronics-factory-erlangen/
+        published: 2025-03-20
         document_type: company blog, named author
+        supports: Explicit statement of internal use, quoting a named Siemens employee.
 
   - dimension: governance_readiness
     score: 3
@@ -169,15 +241,29 @@ scores:
         supports: Learning is tied to executive compensation, but without AI specificity.
 
   - dimension: disclosed_outcomes
-    score: 0
-    anchor_applied: No outcomes published.
+    score: 1
+    anchor_applied: >
+      Qualitative benefit claims only, such as improved efficiency, with no
+      figure.
     rationale: >
-      No quantified result from Siemens' own use of AI was found. Every
-      quantified figure located concerns customers using Siemens products and is
-      excluded under the scope rule. Recorded as 0 rather than estimated, per the
-      evidence standard.
-    tie_break_applied: false
-    evidence: []
+      Revised from 0 to 1 during the re-run. The full Erlangen article attributes
+      a "significantly reduced" unplanned-downtime benefit to the internal
+      deployment, stated by a named Siemens employee. That is a qualitative
+      internal outcome, clearing anchor 1. It does not reach anchor 2: the only
+      figure available, 25% reactive maintenance time, is the same number as the
+      product press release already excluded, is framed as potential ("can save"),
+      and is sourced to interviews rather than measurement. The figure is
+      therefore not used, and the score rests on the qualitative claim.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          At the Electronics Factory Erlangen, unplanned downtime has been
+          "significantly reduced" by leveraging generative AI technologies, says
+          Erik Schwulera.
+        source_url: https://blog.siemens.com/2025/03/innovative-problem-solver-for-the-challenges-of-tomorrow-a-siemens-industrial-copilot-at-the-electronics-factory-erlangen/
+        published: 2025-03-20
+        document_type: company blog, named author
+        supports: Qualitative internal outcome, named source. No figure attached to it.
 
 # Evidence reviewed and deliberately excluded under the scope rule
 # (METHODOLOGY.md section 3.1). Recorded so that the rule can be seen being
