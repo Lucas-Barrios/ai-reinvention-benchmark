@@ -1,0 +1,23 @@
+[project]
+name = "ai-reinvention-benchmark"
+version = "1.0.0"
+description = "Evidence-based AI maturity benchmark of European industrial machinery manufacturers, scored from public disclosure against a rubric fixed before assessment."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Lucas Barrios" }]
+dependencies = [
+    "pydantic>=2.7,<3.0",
+    "PyYAML>=6.0,<7.0",
+]
+
+[project.optional-dependencies]
+app = ["streamlit>=1.35,<2.0", "plotly>=5.22,<6.0", "pandas>=2.2,<3.0"]
+dev = ["pytest>=8.2,<9.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.setuptools]
+packages = ["src"]
