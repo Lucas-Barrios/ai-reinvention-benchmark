@@ -10,6 +10,53 @@ framework_version: "1.2"
 assessed_on: 2026-08-12
 assessor: Lucas Barrios
 sources_reviewed_through: 2026-08-12
+methodology_version: "1.5"
+
+search_log:
+  protocol_applied_on: 2026-08-12
+  note: >
+    Protocol applied retrospectively during the v1.4 re-run block. TRUMPF is
+    privately held and publishes no statutory annual or sustainability report
+    comparable to its listed peers, so source classes 1 and 2 are structurally
+    thin. No score changed on re-run.
+  classes:
+    - class: 1
+      source: Annual report / management report
+      searched: Statutory financial and management reporting.
+      result: >
+        None published. TRUMPF SE + Co. KG is privately held and does not file a
+        public annual report of the kind its listed peers do.
+    - class: 2
+      source: Sustainability / non-financial statement
+      searched: Statutory sustainability disclosure.
+      result: None published in comparable form.
+    - class: 3
+      source: Newsroom and press releases
+      searched: Internal AI, own processes, employees, current and prior year.
+      result: >
+        LASER trade-fair AI release (product). No internal-adoption press release
+        located beyond the newsroom interview in class 5.
+    - class: 4
+      source: Company magazine and stories
+      searched: Internal AI feature content.
+      result: The newsroom interview (class 5) is the primary in-scope source.
+    - class: 5
+      source: Named-executive interviews
+      searched: Head of AI and internal transformation.
+      result: >
+        Primary source. Interview with Sarah Engel, Head of AI, 2025-08-07,
+        disclosing blueGPT internal use, a named accountable role and a structured
+        enablement programme. Load-bearing for the assessment.
+    - class: 6
+      source: Careers pages and job advertisements
+      searched: Internal AI capability roles.
+      result: >
+        Trade coverage of new AI roles being created; consistent with the
+        disclosed AI department but adding no scoreable internal deployment.
+    - class: 7
+      source: Current-year recency check
+      searched: 2026 internal AI, blueGPT, own processes.
+      result: See recency_check. IPAI network partnership; no score effect.
 
 recency_check:
   performed_on: 2026-08-12

@@ -7,10 +7,57 @@
 company_id: krones
 company_name: Krones AG
 framework_version: "1.2"
-methodology_version: "1.3"
+methodology_version: "1.5"
 assessed_on: 2026-08-12
 assessor: Lucas Barrios
 sources_reviewed_through: 2026-08-12
+
+search_log:
+  protocol_applied_on: 2026-08-12
+  note: >
+    Protocol applied retrospectively during the v1.4 re-run block. The governance
+    evidence, an Advisory Council on AI Strategy and explicit EU AI Act
+    preparation, sits in the company magazine (class 4), and was already the basis
+    of the original score. The second-document check of the FY2025 Annual Report
+    added no scoreable internal-adoption disclosure. No score changed on re-run.
+  classes:
+    - class: 1
+      source: Krones Group Annual Report 2025
+      searched: AI governance, internal AI adoption, data platform, EU AI Act.
+      result: >
+        AI framed as a growth driver and product theme. No internal-adoption or
+        governance detail beyond what the company magazine already carries.
+    - class: 2
+      source: Sustainability disclosure
+      searched: AI governance and workforce.
+      result: No AI-specific governance or training content located beyond class 4.
+    - class: 3
+      source: Newsroom and press releases
+      searched: Internal AI, own processes, current and prior year.
+      result: >
+        Microsoft Intelligent Manufacturing Award 2026 (product). No new
+        internal-adoption release.
+    - class: 4
+      source: Krones magazine (company-published features)
+      searched: Internal AI use, governance, quotation project, training.
+      result: >
+        Primary source. "How Krones is using artificial intelligence" (2024-01-22)
+        discloses the Head of AI, the Advisory Council on AI Strategy, EU AI Act
+        preparation, the AI Training Certificate and the internal quotation pilot.
+        Load-bearing for the assessment. The later feature (2025-12-03) is product
+        only.
+    - class: 5
+      source: Named-executive material
+      searched: Head of AI Philipp Olenberg on internal transformation.
+      result: Covered within the class 4 feature; consistent, no new deployment named.
+    - class: 6
+      source: Careers pages and job advertisements
+      searched: Internal AI capability roles.
+      result: Krones.digital roles exist; no scoreable internal deployment surfaced.
+    - class: 7
+      source: Current-year recency check
+      searched: 2025 and 2026 internal AI, quotation project, data platform.
+      result: See recency_check. Product-only updates; no score effect.
 
 recency_check:
   performed_on: 2026-08-12
