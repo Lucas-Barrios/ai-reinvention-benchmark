@@ -1,0 +1,246 @@
+# Assessment: Sandvik AB
+#
+# Scored against framework v1.2 under methodology v1.5. Scores measure evidence
+# of public disclosure of the company's own AI adoption, not internal capability
+# and not products sold. See METHODOLOGY.md sections 2, 3.1, 4 and 5.1.
+
+company_id: sandvik
+company_name: Sandvik AB
+framework_version: "1.2"
+methodology_version: "1.5"
+assessed_on: 2026-08-12
+assessor: Lucas Barrios
+sources_reviewed_through: 2026-08-12
+
+search_log:
+  protocol_applied_on: 2026-08-12
+  classes:
+    - class: 1
+      source: Annual Report 2025 (annualreport.sandvik), incl. The Sandvik Way governance page
+      searched: >
+        Corporate governance report and strategy sections for AI governance, AI
+        accountability, AI Act and internal adoption.
+      result: >
+        The Sandvik Way governance page (published 2026-03-10) sets out a generic
+        corporate governance model, Board, Executive Management, Code of Conduct,
+        risk management, internal control, with no mention of AI. AI appears in
+        strategy as a productivity and digitalisation opportunity.
+    - class: 2
+      source: Sustainability Statement 2025 (CSRD), G1 Business conduct
+      searched: AI governance, responsible AI, AI Act, cybersecurity and data.
+      result: >
+        Governance disclosure covers business conduct, cybersecurity certification
+        and data protection of Sandvik's own and customer data. No AI-specific
+        governance framework, policy or AI Act preparation located.
+    - class: 3
+      source: Newsroom and Stories
+      searched: Internal AI, own operations, employees, generative AI.
+      result: >
+        The corporate story "AI investments is paying off" (2025-02-09) is the
+        primary in-scope source. See scores. Almost all other AI content is
+        product-facing.
+    - class: 4
+      source: Company stories and digital manufacturing site
+      searched: Named internal AI tools and own-operations adoption.
+      result: >
+        Named tools, Manufacturing Copilot, WearApp, rock bolt inspection, Seco
+        tool wear, are described as customer offerings. Internal-operations
+        projects are asserted collectively but none is named.
+    - class: 5
+      source: Named-executive interviews and conference material
+      searched: AI leadership and internal transformation.
+      result: >
+        Strong result. Rahul Kedia, Chief AI Officer, heads the AI and Automation
+        Center for Enablement (CFE), established end of 2022. See governance score.
+    - class: 6
+      source: Careers pages and job advertisements
+      searched: Internal AI capability roles.
+      result: >
+        AI software engineer and data science roles exist within the CFE and
+        graduate tracks. Framing is development of AI solutions across customer and
+        internal projects; no internal-only AI platform role isolated.
+    - class: 7
+      source: Current-year recency check
+      searched: Calendar year 2026 for Sandvik internal AI adoption and governance.
+      result: >
+        2026 material continues the customer-facing and Microsoft-partnership
+        narrative. The Sandvik Way page carries a 2026-03-10 publication date. No
+        new internal-adoption disclosure located.
+
+method_note: >
+  A third-party search summary attributed a "30% employee productivity" gain to
+  Manufacturing Copilot as internal use. Sandvik's own article states Manufacturing
+  Copilot was "made available to customers" and describes it as a product for CAM
+  software users. The 30% figure and the internal-use framing are therefore not
+  supported by the first-party source and are not scored. Verifying the primary
+  before trusting the summary changed the agentic score materially.
+
+recency_check:
+  performed_on: 2026-08-12
+  searched: Calendar year 2026 for Sandvik internal AI use, governance and workforce.
+  found: >
+    Continued Microsoft-partnership and customer-facing AI communication; The
+    Sandvik Way governance page dated 2026-03-10 with no AI content.
+  score_changes: none
+
+scores:
+
+  - dimension: data_foundation
+    score: 1
+    anchor_applied: >
+      Data described as a strategic priority, with no named platform, programme
+      or owner.
+    rationale: >
+      Sandvik has a Chief AI Officer, a dedicated CFE and AI software engineers,
+      which establishes ownership and capability, and names DataDrive'31 as a
+      digital-efficiency initiative. But no consolidated internal data platform is
+      described as in production. Anchor 2 requires a named platform or programme
+      at pilot scope for the company's own data estate. Resolved downward.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          One is to digitalize our company end-to-end, because we want smarter,
+          faster and more efficient processes.
+        source_url: https://www.home.sandvik/en/stories/articles/2025/02/ai-investments-is-paying-off/
+        published: 2025-02-09
+        document_type: corporate story, quoting the Chief AI Officer
+        supports: End-to-end internal digitalisation ambition; no platform named.
+
+  - dimension: process_automation_depth
+    score: 1
+    anchor_applied: >
+      Internal automation named as an ambition, with no process identified.
+    rationale: >
+      Sandvik states that its 20-plus AI projects are "divided between external
+      customer-facing solutions and internal operations", which establishes
+      internal intent and activity. But not one internal-operations project is
+      named or described as in production. Every named tool is a customer offering.
+      Anchor 2 requires a named internal process at pilot scope.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          Over 20 AI projects have since been launched, divided between external
+          customer-facing solutions and internal operations. They involve Sandvik
+          AI software engineers in the CFE working in collaboration with business
+          units across the whole of Sandvik.
+        source_url: https://www.home.sandvik/en/stories/articles/2025/02/ai-investments-is-paying-off/
+        published: 2025-02-09
+        document_type: corporate story, quoting the Chief AI Officer
+        supports: Internal-operations projects asserted collectively, none named.
+
+  - dimension: agentic_genai_deployment
+    score: 1
+    anchor_applied: >
+      Internal use of generative AI named in strategy or an executive statement,
+      with no application identified.
+    rationale: >
+      Sandvik builds generative AI and its Chief AI Officer states an end-to-end
+      internal ambition, which clears anchor 1. But every named generative AI
+      application, Manufacturing Copilot and the mining intelligent advisor, is
+      explicitly a customer offering. No generative AI application in Sandvik's own
+      production is named. Anchor 2 would require a named internal pilot.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          While many of the 20 AI projects launched last year are still in
+          development, some have already been made available to customers,
+          including a Manufacturing Copilot.
+        source_url: https://www.home.sandvik/en/stories/articles/2025/02/ai-investments-is-paying-off/
+        published: 2025-02-09
+        document_type: corporate story
+        supports: The flagship generative AI tool is a customer product, not internal use.
+
+  - dimension: governance_readiness
+    score: 3
+    anchor_applied: >
+      A named governance body, policy or accountable role for AI is disclosed.
+    rationale: >
+      Sandvik discloses a Chief AI Officer and a dedicated AI and Automation Center
+      for Enablement established end of 2022. That is a named accountable role for
+      AI, satisfying anchor 3 on the same basis as Siemens and TRUMPF. Anchor 4
+      requires risk classification practice or explicit EU AI Act preparation. The
+      CFE is framed as an enablement and adoption function, not a governance one,
+      and neither the governance page nor the sustainability statement discloses AI
+      risk classification or AI Act preparation. Held at 3.
+    tie_break_applied: true
+    evidence:
+      - quote: >
+          Rahul Kedia, Chief AI Officer at Sandvik. Kedia is head of Sandvik
+          Artificial Intelligence and Automation Center for Enablement (CFE). CFE
+          was established at the end of 2022 to enable and expedite the usage and
+          adoption of AI and automation across Sandvik.
+        source_url: https://www.home.sandvik/en/stories/articles/2025/02/ai-investments-is-paying-off/
+        published: 2025-02-09
+        document_type: corporate story
+        supports: Named accountable role for AI (Chief AI Officer) plus a dedicated centre.
+      - finding: >
+          The Sandvik Way corporate governance page contains no reference to AI,
+          AI governance, responsible AI or the EU AI Act.
+        source_url: https://www.annualreport.sandvik/en/2025/directors-report/corporate-governance-report/the-sandvik-way.html
+        published: 2026-03-10
+        document_type: annual report, corporate governance report
+        supports: Absence of AI-specific governance structure, preventing a score of 4.
+
+  - dimension: workforce_enablement
+    score: 1
+    anchor_applied: >
+      Upskilling mentioned in general terms, without AI specificity.
+    rationale: >
+      Sandvik names change management and driving adoption as its central
+      challenge, which implies enablement activity, but discloses no structured AI
+      training programme for a defined employee population. Anchor 2 requires AI
+      training offered to a specific group.
+    tie_break_applied: false
+    evidence:
+      - quote: >
+          We need to focus on change management. How can we get people to use the
+          tools that we are creating? It is the biggest challenge today.
+        source_url: https://www.home.sandvik/en/stories/articles/2025/02/ai-investments-is-paying-off/
+        published: 2025-02-09
+        document_type: corporate story, quoting the Chief AI Officer
+        supports: Adoption named as the priority; no training programme disclosed.
+
+  - dimension: disclosed_outcomes
+    score: 0
+    anchor_applied: No outcomes published.
+    rationale: >
+      No quantified outcome from Sandvik's own AI use was located. Benefit language
+      is future-oriented ("AI will, through operational efficiency, help us reduce
+      costs"), and the quantified claims circulating in third-party summaries
+      attach to customer products, not to Sandvik's internal operations.
+    tie_break_applied: false
+    evidence: []
+
+excluded_evidence:
+
+  - reference: >
+      Manufacturing Copilot, the mining intelligent advisor, WearApp, rock bolt
+      inspection, Seco tool-wear identification and AI visual inspection of
+      inserts.
+    source_url: https://www.home.sandvik/en/stories/articles/2025/02/ai-investments-is-paying-off/
+    published: 2025-02-09
+    document_type: corporate story
+    would_have_supported: agentic_genai_deployment, process_automation_depth
+    exclusion_reason: >
+      Products and customer offerings. Vendor evidence, excluded under the scope
+      rule.
+
+  - reference: >
+      A third-party summary claiming Sandvik employees improved productivity by up
+      to 30 percent using Manufacturing Copilot internally.
+    source_url: null
+    document_type: third-party search summary and vendor case study
+    would_have_supported: agentic_genai_deployment, disclosed_outcomes
+    exclusion_reason: >
+      Not supported by the first-party source, which describes Manufacturing
+      Copilot as a customer product. Recorded so the rejection of a tempting but
+      unverified figure is visible.
+
+notes: >
+  Sandvik has the governance scaffolding of a leader, a Chief AI Officer and a
+  dedicated AI centre since 2022, but discloses no named internal deployment. Its
+  profile mirrors Krones, structure ahead of proof, one notch lower because Krones
+  additionally disclosed explicit EU AI Act preparation. Sandvik is also the
+  clearest case in the set of a company that plainly does substantial internal AI
+  work, its Chief AI Officer says so directly, yet publishes named detail only for
+  the customer-facing half. The internal half is asserted and unnamed.
