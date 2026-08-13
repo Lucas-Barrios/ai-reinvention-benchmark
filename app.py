@@ -156,9 +156,11 @@ for score in EVIDENCE[company]:
             st.markdown(f"**Rationale:** {data['rationale']}")
         ev = data.get("evidence") or []
         for e in ev:
-            quote = e.get("quote") or e.get("finding") or ""
-            src = e.get("source_url", "")
-            when = e.get("published") or e.get("retrieved") or ""
+            # YAML parses unquoted dates (e.g. 2025-03-20) into date objects,
+            # so coerce every field to str before formatting.
+            quote = str(e.get("quote") or e.get("finding") or "")
+            src = str(e.get("source_url") or "")
+            when = str(e.get("published") or e.get("retrieved") or "")
             if quote:
                 st.markdown(f"> {quote}")
             meta = " · ".join(x for x in [when, src] if x)
